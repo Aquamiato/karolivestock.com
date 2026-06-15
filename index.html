@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karo Livestock | Premium European Livestock & Meat Export to Iraq & Middle East</title>
+  <meta name="description" content="Karo Livestock — premium live cattle, sheep, goats and meat export from Europe (Latvia) to Iraq, Kurdistan and Middle East. Quality guaranteed. Contact us today." />
+  <meta name="keywords" content="livestock export Iraq, live cattle Middle East, sheep export Iraq, meat export Europe, European livestock, Latvia livestock, cattle export Kurdistan, live animals Iraq, halal meat export, wholesale livestock" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://karolivestock.com/" />
+  <meta property="og:title" content="Karo Livestock | European Livestock Export to Iraq & Middle East" />
+  <meta property="og:description" content="Premium live cattle, sheep, goats and meat from Europe to Iraq, Kurdistan and Middle East." />
+  <meta property="og:url" content="https://karolivestock.com/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --earth:   #2d4a22;   /* deep meadow green */
+      --field:   #4a7c35;   /* mid green */
+      --gold:    #c8951a;   /* wheat gold */
+      --cream:   #f7f3ec;   /* warm off-white */
+      --soil:    #8b5e3c;   /* brown earth */
+      --smoke:   #5a6e52;   /* muted sage */
+      --ink:     #1a2015;
+      --white:   #ffffff;
+      --serif:   'Playfair Display', Georgia, serif;
+      --sans:    'Inter', system-ui, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      background: var(--cream);
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+
+    /* ── LANGUAGE SWITCHER ───────────────────────────────── */
+    .lang-bar {
+      background: var(--ink);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 8px 40px;
+      gap: 4px;
+    }
+    .lang-btn {
+      background: none;
+      border: 1px solid rgba(255,255,255,0.2);
+      color: rgba(255,255,255,0.6);
+      font-family: var(--sans);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      padding: 4px 12px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-btn:hover, .lang-btn.active {
+      background: var(--gold);
+      color: var(--white);
+      border-color: var(--gold);
+    }
+
+    /* ── NAV ─────────────────────────────────────────────── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(247,243,236,0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(45,74,34,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 40px;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .logo-mark {
+      width: 44px;
+      height: 44px;
+      background: var(--earth);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+    }
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .logo-name {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--earth);
+      line-height: 1;
+    }
+    .logo-sub {
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--smoke);
+      margin-top: 2px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--field); }
+    .nav-cta {
+      background: var(--earth);
+      color: var(--white);
+      border: none;
+      padding: 10px 24px;
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--field); }
+    .aq-mob-toggle { display: none; }
+    .aq-mob-close  { display: none; }
+
+    /* ── ROUTE ANIMATION (signature element) ─────────────── */
+    .route-hero {
+      background: var(--earth);
+      padding: 80px 40px 60px;
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      min-height: 88vh;
+    }
+    .route-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 60% 40%, rgba(200,149,26,0.12) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .hero-content { position: relative; z-index: 2; }
+    .hero-eyebrow {
+      font-size: 10px;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 24px;
+    }
+    .hero-title {
+      font-family: var(--serif);
+      font-size: clamp(40px, 5vw, 72px);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.08;
+      margin-bottom: 28px;
+    }
+    .hero-title em { font-style: italic; color: var(--gold); }
+    .hero-desc {
+      font-size: 16px;
+      font-weight: 300;
+      color: rgba(247,243,236,0.75);
+      line-height: 1.8;
+      max-width: 440px;
+      margin-bottom: 44px;
+    }
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--gold);
+      color: var(--white);
+      padding: 14px 32px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s;
+    }
+    .btn-primary:hover { background: #e0a820; transform: translateY(-1px); }
+    .btn-outline {
+      background: transparent;
+      color: rgba(247,243,236,0.8);
+      padding: 14px 32px;
+      font-size: 13px;
+      font-weight: 500;
+      border: 1px solid rgba(247,243,236,0.3);
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s;
+    }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+    /* Route SVG map */
+    .route-map {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .route-svg-wrap {
+      width: 100%;
+      max-width: 480px;
+    }
+    .route-svg-wrap svg { width: 100%; height: auto; }
+    .route-dot {
+      animation: pulse 2s ease-in-out infinite;
+    }
+    .route-dot:nth-child(2) { animation-delay: 0.3s; }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; r: 6; }
+      50% { opacity: 0.5; r: 9; }
+    }
+    .route-path {
+      stroke-dasharray: 600;
+      stroke-dashoffset: 600;
+      animation: drawPath 2.5s ease forwards;
+    }
+    @keyframes drawPath {
+      to { stroke-dashoffset: 0; }
+    }
+    .route-truck {
+      animation: moveTruck 3s ease-in-out infinite alternate;
+    }
+    @keyframes moveTruck {
+      from { transform: translateX(0); }
+      to { transform: translateX(8px); }
+    }
+
+    /* Stats row */
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 52px;
+      padding-top: 36px;
+      border-top: 1px solid rgba(247,243,236,0.1);
+    }
+    .stat-num {
+      font-family: var(--serif);
+      font-size: 34px;
+      font-weight: 600;
+      color: var(--gold);
+    }
+    .stat-label {
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(247,243,236,0.4);
+      margin-top: 4px;
+    }
+
+    /* ── ANIMALS SECTION ─────────────────────────────────── */
+    .animals-section {
+      padding: 90px 40px;
+      background: var(--white);
+    }
+    .section-eyebrow {
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 14px;
+      text-align: center;
+    }
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(32px, 4vw, 52px);
+      font-weight: 600;
+      line-height: 1.1;
+      text-align: center;
+      margin-bottom: 60px;
+      color: var(--earth);
+    }
+    .section-title em { font-style: italic; color: var(--gold); }
+    .animals-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .animal-card {
+      background: var(--cream);
+      padding: 48px 36px;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.3s;
+    }
+    .animal-card:hover { background: var(--earth); }
+    .animal-card:hover .animal-name,
+    .animal-card:hover .animal-desc { color: var(--white); }
+    .animal-card:hover .animal-icon { transform: scale(1.1); }
+    .animal-card:hover .animal-tag { background: rgba(255,255,255,0.15); color: var(--gold); }
+    .animal-icon {
+      font-size: 52px;
+      margin-bottom: 24px;
+      display: block;
+      transition: transform 0.3s;
+    }
+    .animal-name {
+      font-family: var(--serif);
+      font-size: 26px;
+      font-weight: 600;
+      color: var(--earth);
+      margin-bottom: 12px;
+      transition: color 0.3s;
+    }
+    .animal-desc {
+      font-size: 14px;
+      color: var(--smoke);
+      line-height: 1.75;
+      margin-bottom: 24px;
+      transition: color 0.3s;
+    }
+    .animal-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+    .animal-tag {
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: rgba(45,74,34,0.08);
+      color: var(--earth);
+      padding: 4px 10px;
+      transition: all 0.3s;
+    }
+
+    /* ── WHY US ──────────────────────────────────────────── */
+    .why-section {
+      padding: 90px 40px;
+      background: var(--cream);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+      align-items: center;
+    }
+    .why-visual {
+      background: var(--earth);
+      padding: 60px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+    .why-visual-title {
+      font-family: var(--serif);
+      font-size: 32px;
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1.2;
+    }
+    .why-visual-title em { color: var(--gold); font-style: italic; }
+    .why-route {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+    .why-node {
+      background: rgba(255,255,255,0.1);
+      color: var(--white);
+      padding: 8px 16px;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+    }
+    .why-arrow { color: var(--gold); font-size: 18px; }
+    .why-content h2 {
+      font-family: var(--serif);
+      font-size: 38px;
+      font-weight: 600;
+      color: var(--earth);
+      margin-bottom: 32px;
+      line-height: 1.15;
+    }
+    .why-content h2 em { font-style: italic; color: var(--gold); }
+    .why-list { list-style: none; display: flex; flex-direction: column; gap: 20px; }
+    .why-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .why-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--earth);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .why-item-text h4 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--earth);
+      margin-bottom: 4px;
+    }
+    .why-item-text p {
+      font-size: 13px;
+      color: var(--smoke);
+      line-height: 1.65;
+    }
+
+    /* ── PROCESS ─────────────────────────────────────────── */
+    .process-section {
+      padding: 90px 40px;
+      background: var(--earth);
+    }
+    .process-section .section-eyebrow { color: var(--gold); }
+    .process-section .section-title { color: var(--white); }
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .process-step {
+      background: rgba(255,255,255,0.04);
+      padding: 36px 28px;
+      border-top: 2px solid rgba(200,149,26,0.3);
+      transition: background 0.2s;
+    }
+    .process-step:hover { background: rgba(255,255,255,0.08); }
+    .step-num {
+      font-family: var(--serif);
+      font-size: 48px;
+      font-weight: 700;
+      color: rgba(200,149,26,0.25);
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+    .step-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+    .step-desc {
+      font-size: 13px;
+      color: rgba(247,243,236,0.55);
+      line-height: 1.7;
+    }
+
+    /* ── CONTACT ─────────────────────────────────────────── */
+    .contact-section {
+      padding: 90px 40px;
+      background: var(--white);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .contact-info h2 {
+      font-family: var(--serif);
+      font-size: 42px;
+      font-weight: 600;
+      color: var(--earth);
+      margin-bottom: 20px;
+      line-height: 1.15;
+    }
+    .contact-info h2 em { font-style: italic; color: var(--gold); }
+    .contact-info p {
+      font-size: 15px;
+      color: var(--smoke);
+      line-height: 1.8;
+      margin-bottom: 36px;
+    }
+    .contact-items { display: flex; flex-direction: column; gap: 20px; }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .contact-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .contact-item-text a {
+      color: var(--earth);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+    }
+    .contact-item-text a:hover { color: var(--gold); }
+    .contact-item-text span {
+      display: block;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--smoke);
+      margin-bottom: 2px;
+    }
+
+    /* WhatsApp float */
+    .wa-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 999;
+      width: 56px;
+      height: 56px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 6px 24px rgba(37,211,102,0.4);
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+    .wa-float:hover { transform: scale(1.1); }
+
+    /* Contact form */
+    .contact-form { display: flex; flex-direction: column; gap: 16px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-group label {
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--smoke);
+      font-weight: 500;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: var(--cream);
+      border: 1px solid rgba(45,74,34,0.15);
+      color: var(--ink);
+      padding: 12px 16px;
+      font-family: var(--sans);
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.2s;
+      width: 100%;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--field); }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-submit {
+      background: var(--earth);
+      color: var(--white);
+      border: none;
+      padding: 15px 36px;
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      transition: background 0.2s;
+      align-self: flex-start;
+    }
+    .form-submit:hover { background: var(--field); }
+
+    /* ── FOOTER ──────────────────────────────────────────── */
+    footer {
+      background: var(--ink);
+      padding: 48px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .footer-logo {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--white);
+    }
+    .footer-logo span { color: var(--gold); }
+    footer p {
+      font-size: 12px;
+      color: rgba(255,255,255,0.3);
+    }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a {
+      font-size: 12px;
+      color: rgba(255,255,255,0.4);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--gold); }
+
+    /* ── RTL support for Arabic/Kurdish ─────────────────── */
+    [lang="ar"], [lang="ku"] { font-family: 'Segoe UI', Tahoma, Arial, sans-serif; }
+
+    /* ── RESPONSIVE ──────────────────────────────────────── */
+    @media (max-width: 900px) {
+      nav { padding: 14px 20px; }
+      .nav-links { display: none; }
+      .aq-mob-toggle {
+        display: flex; align-items: center; justify-content: center;
+        background: none; border: none; cursor: pointer;
+        font-size: 1.4rem; color: var(--earth);
+      }
+      .lang-bar { padding: 8px 20px; }
+      .route-hero { grid-template-columns: 1fr; padding: 60px 20px 40px; min-height: auto; }
+      .route-map { display: none; }
+      .animals-grid { grid-template-columns: 1fr; }
+      .why-section { grid-template-columns: 1fr; padding: 60px 20px; }
+      .process-grid { grid-template-columns: 1fr 1fr; }
+      .contact-section { grid-template-columns: 1fr; padding: 60px 20px; }
+      .form-row { grid-template-columns: 1fr; }
+      footer { padding: 36px 20px; flex-direction: column; align-items: flex-start; }
+      .animals-section, .process-section { padding: 60px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/37127700121" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+<!-- Language Bar -->
+<div class="lang-bar">
+  <button class="lang-btn active" onclick="setLang('en')">EN</button>
+  <button class="lang-btn" onclick="setLang('ar')">العربية</button>
+  <button class="lang-btn" onclick="setLang('ku')">کوردی</button>
+</div>
+
+<!-- Nav -->
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="logo-mark">🐄</div>
+    <div class="logo-text">
+      <span class="logo-name">Karo Livestock</span>
+      <span class="logo-sub" data-en="Europe → Middle East" data-ar="أوروبا ← الشرق الأوسط" data-ku="ئەوروپا ← ڕۆژهەڵاتی ناوەڕاست">Europe → Middle East</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#animals" data-en="Animals" data-ar="الحيوانات" data-ku="حەیوانەکان">Animals</a></li>
+    <li><a href="#why" data-en="Why Us" data-ar="لماذا نحن" data-ku="بۆچی ئێمە">Why Us</a></li>
+    <li><a href="#process" data-en="Process" data-ar="العملية" data-ku="پرۆسە">Process</a></li>
+    <li><a href="#contact" data-en="Contact" data-ar="اتصل بنا" data-ku="پەیوەندی">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta" data-en="Get a Quote" data-ar="احصل على عرض سعر" data-ku="نرخ وەربگرە">Get a Quote</a>
+  <button class="aq-mob-toggle" aria-label="Menu">☰</button>
+</nav>
+
+<!-- Hero -->
+<section class="route-hero">
+  <div class="hero-content">
+    <p class="hero-eyebrow" data-en="Latvia, Europe → Iraq & Middle East" data-ar="لاتفيا، أوروبا ← العراق والشرق الأوسط" data-ku="لاتڤیا، ئەوروپا ← عێراق و ڕۆژهەڵاتی ناوەڕاست">Latvia, Europe → Iraq & Middle East</p>
+    <h1 class="hero-title" data-en="Premium European Livestock,<br/><em>Delivered to Your Door</em>" data-ar="ماشية أوروبية فاخرة،<br/><em>تُسلَّم إلى بابك</em>" data-ku="مەڕوماڵاتی ئەوروپیی باڵا،<br/><em>گەیەندراوە بۆ دەرگاکەت</em>">Premium European Livestock,<br/><em>Delivered to Your Door</em></h1>
+    <p class="hero-desc" data-en="We export live cattle, sheep, goats and premium meat from Europe (Latvia) directly to Iraq, Kurdistan and across the Middle East. Veterinary certified, halal-ready, competitive pricing." data-ar="نصدّر الأبقار الحية والأغنام والماعز واللحوم الفاخرة من أوروبا (لاتفيا) مباشرةً إلى العراق وكردستان وسائر دول الشرق الأوسط. مع شهادات بيطرية وجاهزية حلال وأسعار تنافسية." data-ku="ئێمە مەڕوماڵات و گۆشتی باڵا لە ئەوروپا (لاتڤیا) ئەناردین بۆ عێراق و کوردستان و ڕۆژهەڵاتی ناوەڕاست. پشتیوانی پزیشکی مەڕوماڵات، ئامادەی حەڵاڵ، نرخی کێبڕکێکار.">We export live cattle, sheep, goats and premium meat from Europe (Latvia) directly to Iraq, Kurdistan and across the Middle East. Veterinary certified, halal-ready, competitive pricing.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary" data-en="📞 Request a Quote" data-ar="📞 طلب عرض سعر" data-ku="📞 داواکاری نرخ">📞 Request a Quote</a>
+      <a href="https://wa.me/37127700121" class="btn-outline" target="_blank" data-en="💬 WhatsApp Us" data-ar="💬 راسلنا واتساب" data-ku="💬 واتساپمان بکە">💬 WhatsApp Us</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">EU</div>
+        <div class="stat-label" data-en="Certified" data-ar="معتمد" data-ku="مۆڵەتدار">Certified</div>
+      </div>
+      <div>
+        <div class="stat-num">🌍</div>
+        <div class="stat-label" data-en="Middle East Delivery" data-ar="توصيل الشرق الأوسط" data-ku="گەیاندن بۆ ڕۆژهەڵات">Middle East Delivery</div>
+      </div>
+      <div>
+        <div class="stat-num">✅</div>
+        <div class="stat-label" data-en="Halal Ready" data-ar="جاهز للحلال" data-ku="ئامادەی حەڵاڵ">Halal Ready</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Animated route SVG -->
+  <div class="route-map" aria-hidden="true">
+    <div class="route-svg-wrap">
+      <svg viewBox="0 0 480 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Background -->
+        <rect width="480" height="420" fill="rgba(255,255,255,0.03)" rx="4"/>
+
+        <!-- Europe landmass (simplified) -->
+        <path d="M60,80 L140,60 L200,70 L220,90 L200,110 L180,130 L160,140 L140,150 L110,145 L80,130 L60,110 Z" fill="rgba(74,124,53,0.2)" stroke="rgba(74,124,53,0.4)" stroke-width="1"/>
+        <!-- Latvia dot -->
+        <circle cx="175" cy="90" r="8" fill="var(--gold)" class="route-dot"/>
+        <text x="188" y="86" fill="rgba(247,243,236,0.9)" font-size="11" font-family="Inter">Latvia 🇱🇻</text>
+
+        <!-- Middle East landmass -->
+        <path d="M290,220 L360,200 L420,220 L440,260 L420,300 L380,320 L340,310 L300,280 L280,250 Z" fill="rgba(139,94,60,0.2)" stroke="rgba(139,94,60,0.4)" stroke-width="1"/>
+        <!-- Iraq dot -->
+        <circle cx="355" cy="260" r="8" fill="rgba(200,149,26,0.9)" class="route-dot"/>
+        <text x="368" y="256" fill="rgba(247,243,236,0.9)" font-size="11" font-family="Inter">Iraq 🇮🇶</text>
+
+        <!-- Animated route path -->
+        <path class="route-path" d="M175,90 C200,100 220,120 240,150 C260,180 270,200 290,230 C310,250 330,255 355,260"
+          stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="8 4"/>
+
+        <!-- Truck icon (animated) -->
+        <g class="route-truck" transform="translate(230,165)">
+          <rect x="-18" y="-10" width="36" height="18" rx="2" fill="var(--gold)" opacity="0.9"/>
+          <rect x="-22" y="-6" width="8" height="12" rx="1" fill="var(--gold)" opacity="0.7"/>
+          <circle cx="-12" cy="10" r="4" fill="var(--earth)"/>
+          <circle cx="12" cy="10" r="4" fill="var(--earth)"/>
+          <text x="-7" y="4" font-size="10" fill="var(--earth)">🐄</text>
+        </g>
+
+        <!-- Distance label -->
+        <text x="200" y="185" fill="rgba(200,149,26,0.6)" font-size="10" font-family="Inter" text-anchor="middle">~4,000 km</text>
+
+        <!-- Decorative dots along route -->
+        <circle cx="210" cy="120" r="3" fill="rgba(200,149,26,0.3)"/>
+        <circle cx="240" cy="155" r="3" fill="rgba(200,149,26,0.3)"/>
+        <circle cx="270" cy="195" r="3" fill="rgba(200,149,26,0.3)"/>
+        <circle cx="305" cy="228" r="3" fill="rgba(200,149,26,0.3)"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- Animals -->
+<section id="animals" class="animals-section">
+  <p class="section-eyebrow" data-en="What We Export" data-ar="ما نصدّره" data-ku="چی ئەناردین">What We Export</p>
+  <h2 class="section-title" data-en="Premium <em>Livestock</em> & Meat" data-ar="ماشية <em>فاخرة</em> ولحوم" data-ku="مەڕوماڵاتی <em>باڵا</em> و گۆشت">Premium <em>Livestock</em> & Meat</h2>
+  <div class="animals-grid">
+
+    <div class="animal-card">
+      <span class="animal-icon">🐄</span>
+      <h3 class="animal-name" data-en="Live Cattle" data-ar="أبقار حية" data-ku="مانگای زیندوو">Live Cattle</h3>
+      <p class="animal-desc" data-en="High-quality European breeds — Holstein, Simmental, Limousin. Veterinary certified, vaccinated, ready for export." data-ar="سلالات أوروبية عالية الجودة — هولشتاين وسيمنتال وليموزين. معتمدة بيطرياً ومطعّمة وجاهزة للتصدير." data-ku="جۆرە ئەوروپییە باڵاکان — هۆلستاین، سیمەنتاڵ، لیموزین. گواهی پزیشکی مەڕوماڵات، واکسینکراو، ئامادەی هەناردەکردن.">High-quality European breeds — Holstein, Simmental, Limousin. Veterinary certified, vaccinated, ready for export.</p>
+      <div class="animal-tags">
+        <span class="animal-tag" data-en="Live Export" data-ar="تصدير حي" data-ku="هەناردەی زیندوو">Live Export</span>
+        <span class="animal-tag" data-en="EU Certified" data-ar="معتمد أوروبياً" data-ku="ئەوروپا مۆڵەتدار">EU Certified</span>
+      </div>
+    </div>
+
+    <div class="animal-card">
+      <span class="animal-icon">🐑</span>
+      <h3 class="animal-name" data-en="Sheep & Lambs" data-ar="أغنام وحملان" data-ku="مەڕ و برە">Sheep & Lambs</h3>
+      <p class="animal-desc" data-en="Merino, Texel and local breeds. Young lambs and mature sheep available year-round. Ideal for Eid and religious festivals." data-ar="سلالات المرينو وتكسل والسلالات المحلية. حملان صغيرة وأغنام ناضجة متاحة طوال العام. مثالية لعيد الأضحى والمناسبات الدينية." data-ku="جۆرەی مەرینۆ، تێکسەڵ و جۆرە خۆمالیەکان. برە بچووک و مەڕی گەورە بە تەواوی ساڵ بەردەستە. گونجاوە بۆ جەژنی قوربان و ئاینی.">Merino, Texel and local breeds. Young lambs and mature sheep available year-round. Ideal for Eid and religious festivals.</p>
+      <div class="animal-tags">
+        <span class="animal-tag" data-en="Halal Ready" data-ar="جاهز للحلال" data-ku="ئامادەی حەڵاڵ">Halal Ready</span>
+        <span class="animal-tag" data-en="Year-round" data-ar="طوال العام" data-ku="تەواوی ساڵ">Year-round</span>
+      </div>
+    </div>
+
+    <div class="animal-card">
+      <span class="animal-icon">🐐</span>
+      <h3 class="animal-name" data-en="Goats" data-ar="ماعز" data-ku="بزن">Goats</h3>
+      <p class="animal-desc" data-en="Boer, Nubian and Alpine breeds. Premium quality goats for meat production and live export to Middle Eastern markets." data-ar="سلالات البوير والنوبي والألبي. ماعز فاخر لإنتاج اللحوم والتصدير الحي إلى أسواق الشرق الأوسط." data-ku="جۆرەی بوئەر، نووبیان و ئەڵپاین. بزنی باڵا بۆ بەرهەمهێنانی گۆشت و هەناردەی زیندوو بۆ بازاڕەکانی ڕۆژهەڵاتی ناوەڕاست.">Boer, Nubian and Alpine breeds. Premium quality goats for meat production and live export to Middle Eastern markets.</p>
+      <div class="animal-tags">
+        <span class="animal-tag" data-en="Live Export" data-ar="تصدير حي" data-ku="هەناردەی زیندوو">Live Export</span>
+        <span class="animal-tag" data-en="Bulk Orders" data-ar="طلبات بالجملة" data-ku="داواکاری کۆ">Bulk Orders</span>
+      </div>
+    </div>
+
+    <div class="animal-card">
+      <span class="animal-icon">🥩</span>
+      <h3 class="animal-name" data-en="Fresh & Frozen Meat" data-ar="لحوم طازجة ومجمدة" data-ku="گۆشتی تازە و بەفراو">Fresh & Frozen Meat</h3>
+      <p class="animal-desc" data-en="Premium EU beef, lamb and veal cuts. Halal-certified, vacuum packed, cold chain maintained throughout delivery." data-ar="قطع لحوم بقر وخروف وعجول أوروبية فاخرة. معتمدة حلال ومعبأة بالتفريغ مع الحفاظ على سلسلة التبريد." data-ku="بڕگەی گۆشتی گاو، مەڕ و گووژمەی ئەوروپیی باڵا. گواهی حەڵاڵ، بەستراو بە خالی هەوا، زنجیرەی ساردکردنەوە تەواوی ڕێگایەکە پارێزراوە.">Premium EU beef, lamb and veal cuts. Halal-certified, vacuum packed, cold chain maintained throughout delivery.</p>
+      <div class="animal-tags">
+        <span class="animal-tag" data-en="Halal Certified" data-ar="شهادة حلال" data-ku="گواهی حەڵاڵ">Halal Certified</span>
+        <span class="animal-tag" data-en="Cold Chain" data-ar="سلسلة تبريد" data-ku="زنجیرەی ساردکردن">Cold Chain</span>
+      </div>
+    </div>
+
+    <div class="animal-card">
+      <span class="animal-icon">🐓</span>
+      <h3 class="animal-name" data-en="Poultry" data-ar="دواجن" data-ku="تووکەی ماڵەوە">Poultry</h3>
+      <p class="animal-desc" data-en="Whole chickens, turkey and duck — fresh and frozen. European quality, halal-slaughtered, available in bulk quantities." data-ar="دجاج كامل وديك رومي وبط — طازج ومجمد. جودة أوروبية وذبح حلال ومتاح بكميات كبيرة." data-ku="مریشکی تەواو، ئیندیوکۆ و بەت — تازە و بەفراو. کوالیتەی ئەوروپی، سەرکراوی حەڵاڵ، بەردەستە بە دانەی زۆر.">Whole chickens, turkey and duck — fresh and frozen. European quality, halal-slaughtered, available in bulk quantities.</p>
+      <div class="animal-tags">
+        <span class="animal-tag" data-en="Bulk Supply" data-ar="توريد بالجملة" data-ku="دابینکردنی کۆ">Bulk Supply</span>
+        <span class="animal-tag" data-en="EU Quality" data-ar="جودة أوروبية" data-ku="کوالیتەی ئەوروپی">EU Quality</span>
+      </div>
+    </div>
+
+    <div class="animal-card">
+      <span class="animal-icon">📦</span>
+      <h3 class="animal-name" data-en="Custom Orders" data-ar="طلبات مخصصة" data-ku="داواکاری تایبەت">Custom Orders</h3>
+      <p class="animal-desc" data-en="Specific breeds, quantities or meat cuts? We source directly from European farms to meet your exact requirements. Contact us for custom pricing." data-ar="سلالات أو كميات أو قطع لحم محددة؟ نحصل عليها مباشرةً من المزارع الأوروبية لتلبية متطلباتك تماماً. اتصل بنا للحصول على أسعار مخصصة." data-ku="جۆرە، دان یان بڕگەی گۆشتی تایبەت؟ ئێمە ڕاستەوخۆ لە جووتیارییەکانی ئەوروپا دابینیان دەکەین بۆ پێداویستیە تایبەتەکانت. پەیوەندیمان پێوە بکە بۆ نرخی تایبەت.">Specific breeds, quantities or meat cuts? We source directly from European farms to meet your exact requirements. Contact us for custom pricing.</p>
+      <div class="animal-tags">
+        <span class="animal-tag" data-en="Custom Quote" data-ar="عرض سعر مخصص" data-ku="نرخی تایبەت">Custom Quote</span>
+        <span class="animal-tag" data-en="Direct Source" data-ar="مصدر مباشر" data-ku="سەرچاوەی ڕاستەوخۆ">Direct Source</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Why Us -->
+<section id="why" style="background:var(--cream);padding:90px 40px;">
+  <div class="why-section" style="padding:0;max-width:1100px;margin:0 auto;">
+    <div class="why-visual">
+      <h3 class="why-visual-title" data-en="From European <em>Farms</em> to Middle Eastern <em>Markets</em>" data-ar="من <em>مزارع</em> أوروبا إلى <em>أسواق</em> الشرق الأوسط" data-ku="لە <em>جووتیاریی</em>ەکانی ئەوروپا بۆ <em>بازاڕ</em>ەکانی ڕۆژهەڵاتی ناوەڕاست">From European <em>Farms</em> to Middle Eastern <em>Markets</em></h3>
+      <div class="why-route">
+        <div class="why-node">🇱🇻 Latvia</div>
+        <span class="why-arrow">→</span>
+        <div class="why-node">🚢 Transit</div>
+        <span class="why-arrow">→</span>
+        <div class="why-node">🇮🇶 Iraq</div>
+      </div>
+      <div class="why-route" style="margin-top:0;">
+        <div class="why-node">🇱🇻 Latvia</div>
+        <span class="why-arrow">→</span>
+        <div class="why-node">🚛 Overland</div>
+        <span class="why-arrow">→</span>
+        <div class="why-node">🌍 Gulf</div>
+      </div>
+      <p style="font-size:13px;color:rgba(247,243,236,0.5);margin-top:12px;" data-en="Established trade routes. Experienced logistics partners." data-ar="مسارات تجارية راسخة. شركاء لوجستيون متمرسون." data-ku="ڕێگاکانی بازرگانی دامەزراو. هاوبەشانی لۆجیستیکی ئەزموندار.">Established trade routes. Experienced logistics partners.</p>
+    </div>
+    <div class="why-content">
+      <h2 data-en="Why Choose <em>Karo Livestock?</em>" data-ar="لماذا تختار <em>كارو للماشية؟</em>" data-ku="بۆچی <em>کارۆ لایڤستۆک</em> هەڵبژێرە؟">Why Choose <em>Karo Livestock?</em></h2>
+      <ul class="why-list">
+        <li class="why-item">
+          <div class="why-icon">✅</div>
+          <div class="why-item-text">
+            <h4 data-en="EU Veterinary Certified" data-ar="معتمد بيطرياً أوروبياً" data-ku="گواهی پزیشکی مەڕوماڵاتی ئەوروپا">EU Veterinary Certified</h4>
+            <p data-en="All livestock comes with full EU health certificates, vaccination records and export documentation." data-ar="جميع الماشية مزوّدة بشهادات صحية أوروبية كاملة وسجلات التطعيم ووثائق التصدير." data-ku="هەموو مەڕوماڵات لەگەڵ گواهی تەندروستی تەواوی ئەوروپا، تۆماری واکسین و بەڵگەنامەکانی هەناردەکردن دێن.">All livestock comes with full EU health certificates, vaccination records and export documentation.</p>
+          </div>
+        </li>
+        <li class="why-item">
+          <div class="why-icon">🕌</div>
+          <div class="why-item-text">
+            <h4 data-en="Halal Compliant" data-ar="متوافق مع الحلال" data-ku="گونجاوی حەڵاڵ">Halal Compliant</h4>
+            <p data-en="We work with halal-certified slaughterhouses and can provide halal documentation for all meat products." data-ar="نتعاون مع مجازر معتمدة حلالاً ويمكننا تقديم وثائق حلال لجميع منتجات اللحوم." data-ku="ئێمە لەگەڵ سەرکردنگاکانی گواهی حەڵاڵدار کاردەکەین و دەتوانین بەڵگەنامەی حەڵاڵ بۆ هەموو بەرهەمەکانی گۆشت دابین بکەین.">We work with halal-certified slaughterhouses and can provide halal documentation for all meat products.</p>
+          </div>
+        </li>
+        <li class="why-item">
+          <div class="why-icon">🚚</div>
+          <div class="why-item-text">
+            <h4 data-en="End-to-End Logistics" data-ar="لوجستيات شاملة" data-ku="لۆجیستیکی تەواو">End-to-End Logistics</h4>
+            <p data-en="We handle all transport, customs clearance, paperwork and delivery coordination from Europe to your destination." data-ar="نتولى إدارة جميع عمليات النقل والتخليص الجمركي والأوراق الرسمية وتنسيق التسليم من أوروبا إلى وجهتك." data-ku="ئێمە هەموو گواستنەوە، دەرچوونی گومرگ، کاغەز و هەماهەنگکردنی گەیاندن لە ئەوروپا بۆ مەودا خۆتان بەڕێوە دەبرین.">We handle all transport, customs clearance, paperwork and delivery coordination from Europe to your destination.</p>
+          </div>
+        </li>
+        <li class="why-item">
+          <div class="why-icon">💬</div>
+          <div class="why-item-text">
+            <h4 data-en="Arabic & Kurdish Speaking" data-ar="نتحدث العربية والكردية" data-ku="عەرەبی و کوردی قسەدەکەین">Arabic & Kurdish Speaking</h4>
+            <p data-en="Our team communicates in Arabic, Kurdish and English — no language barriers, clear contracts." data-ar="فريقنا يتواصل بالعربية والكردية والإنجليزية — بلا حواجز لغوية وعقود واضحة." data-ku="تیمەکەمان بە عەرەبی، کوردی و ئینگلیزی قسەی پێوە دەکات — بێ مانگرتووی زمان، گرێبەستی ئاشکرا.">Our team communicates in Arabic, Kurdish and English — no language barriers, clear contracts.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section id="process" class="process-section">
+  <p class="section-eyebrow" data-en="How It Works" data-ar="كيف تتم العملية" data-ku="چۆن کار دەکات">How It Works</p>
+  <h2 class="section-title" data-en="Simple. Reliable. <em>Fast.</em>" data-ar="بسيط. موثوق. <em>سريع.</em>" data-ku="سادە. پشتیوان. <em>خێرا.</em>">Simple. Reliable. <em>Fast.</em></h2>
+  <div class="process-grid">
+    <div class="process-step">
+      <div class="step-num">01</div>
+      <h3 class="step-title" data-en="Contact Us" data-ar="تواصل معنا" data-ku="پەیوەندیمان پێوە بکە">Contact Us</h3>
+      <p class="step-desc" data-en="Send your requirements via WhatsApp, email or our contact form. Tell us: animal type, quantity, destination." data-ar="أرسل متطلباتك عبر واتساب أو البريد الإلكتروني أو نموذج الاتصال. أخبرنا بنوع الحيوان والكمية والوجهة." data-ku="پێداویستییەکانت بنێرە بە واتساپ، ئیمەیل یان فۆرمی پەیوەندی. پێمان بڵێ: جۆری حەیوان، دان، مەودا.">Send your requirements via WhatsApp, email or our contact form. Tell us: animal type, quantity, destination.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">02</div>
+      <h3 class="step-title" data-en="Get a Quote" data-ar="احصل على عرض سعر" data-ku="نرخ وەربگرە">Get a Quote</h3>
+      <p class="step-desc" data-en="We provide a detailed quote within 24 hours including livestock price, transport, documentation and delivery timeline." data-ar="نقدم عرض سعر مفصلاً خلال 24 ساعة يشمل سعر الماشية والنقل والتوثيق والجدول الزمني للتسليم." data-ku="ئێمە نرخنامەیەکی ورد لە 24 کاتژمێردا دابین دەکەین کە نرخی مەڕوماڵات، گواستنەوە، بەڵگەنامە و کاتی گەیاندن دەگرێتەوە.">We provide a detailed quote within 24 hours including livestock price, transport, documentation and delivery timeline.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">03</div>
+      <h3 class="step-title" data-en="Documentation" data-ar="التوثيق" data-ku="بەڵگەنامەکان">Documentation</h3>
+      <p class="step-desc" data-en="We prepare all EU export certificates, health documents, CITES permits and import documentation for your country." data-ar="نُعدّ جميع شهادات التصدير الأوروبية والوثائق الصحية وتصاريح سايتس ووثائق الاستيراد لبلدك." data-ku="ئێمە هەموو گواهینامەکانی هەناردەکردنی ئەوروپا، بەڵگەنامە تەندروستیەکان، مۆڵەتنامەکانی CITES و بەڵگەنامەکانی هاوردە بۆ وڵاتت ئامادە دەکەین.">We prepare all EU export certificates, health documents, CITES permits and import documentation for your country.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">04</div>
+      <h3 class="step-title" data-en="Delivery" data-ar="التسليم" data-ku="گەیاندن">Delivery</h3>
+      <p class="step-desc" data-en="Live animals transported in welfare-compliant vehicles. Meat shipped refrigerated or frozen. Tracking provided throughout." data-ar="نقل الحيوانات الحية في مركبات متوافقة مع معايير الرعاية. شحن اللحوم مبردة أو مجمدة مع تتبع مستمر." data-ku="حەیوانی زیندوو بە ئوتومبێلی گونجاو بە ڕێسای چاودێریەوە گواستراوەتەوە. گۆشت بە ساردکراوە یان بەفراو ناردراوە. پیچاندنی شوێن لە هەموو ڕێگاکادا دابین کراوە.">Live animals transported in welfare-compliant vehicles. Meat shipped refrigerated or frozen. Tracking provided throughout.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" style="background:var(--white);padding:90px 40px;">
+  <div class="contact-section" style="padding:0;">
+    <div class="contact-info">
+      <h2 data-en="Let's Talk <em>Business</em>" data-ar="لنتحدث <em>عن الأعمال</em>" data-ku="با قسەی <em>بازرگانی</em> بکەین">Let's Talk <em>Business</em></h2>
+      <p data-en="Ready to import premium European livestock or meat? Contact us via WhatsApp or fill in the form — we respond within 24 hours." data-ar="هل أنت مستعد لاستيراد ماشية أو لحوم أوروبية فاخرة؟ تواصل معنا عبر واتساب أو املأ النموذج — نرد خلال 24 ساعة." data-ku="ئامادەی هاوردەکردنی مەڕوماڵات یان گۆشتی ئەوروپیی باڵایی؟ پەیوەندیمان پێوە بکە بە واتساپ یان فۆرمەکە پڕبکەرەوە — لە 24 کاتژمێردا وەڵامت دەدەینەوە.">Ready to import premium European livestock or meat? Contact us via WhatsApp or fill in the form — we respond within 24 hours.</p>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div class="contact-item-text">
+            <span data-en="WhatsApp / Phone" data-ar="واتساب / هاتف" data-ku="واتساپ / تەلەفۆن">WhatsApp / Phone</span>
+            <a href="https://wa.me/37127700121">+371 277 001 21</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div class="contact-item-text">
+            <span data-en="Email" data-ar="البريد الإلكتروني" data-ku="ئیمەیل">Email</span>
+            <a href="mailto:karanubeshop@gmail.com">karanubeshop@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div class="contact-item-text">
+            <span data-en="Based in" data-ar="مقرنا في" data-ku="بنکەمان لە">Based in</span>
+            <a href="#">Riga, Latvia — European Union 🇱🇻</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">💬</div>
+          <div class="contact-item-text">
+            <span data-en="Languages" data-ar="اللغات" data-ku="زمانەکان">Languages</span>
+            <a href="#">English · العربية · کوردی · Latviešu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label data-en="Your Name" data-ar="اسمك" data-ku="ناوت">Your Name</label>
+            <input type="text" required placeholder="Ahmed Al-Rashid" />
+          </div>
+          <div class="form-group">
+            <label data-en="Country" data-ar="البلد" data-ku="وڵات">Country</label>
+            <select>
+              <option value="">Select country...</option>
+              <option>Iraq 🇮🇶</option>
+              <option>Kurdistan Region</option>
+              <option>Saudi Arabia 🇸🇦</option>
+              <option>UAE 🇦🇪</option>
+              <option>Kuwait 🇰🇼</option>
+              <option>Jordan 🇯🇴</option>
+              <option>Turkey 🇹🇷</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label data-en="WhatsApp / Phone" data-ar="واتساب / هاتف" data-ku="واتساپ / تەلەفۆن">WhatsApp / Phone</label>
+            <input type="tel" placeholder="+964 770..." />
+          </div>
+          <div class="form-group">
+            <label data-en="Email" data-ar="البريد الإلكتروني" data-ku="ئیمەیل">Email</label>
+            <input type="email" placeholder="you@company.com" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label data-en="I'm interested in" data-ar="أنا مهتم بـ" data-ku="من بەرژەوەندیم هەیە لە">I'm interested in</label>
+          <select>
+            <option data-en="Live Cattle" data-ar="أبقار حية" data-ku="مانگای زیندوو">Live Cattle</option>
+            <option data-en="Live Sheep / Lambs" data-ar="أغنام حية / حملان" data-ku="مەڕی زیندوو / برە">Live Sheep / Lambs</option>
+            <option data-en="Live Goats" data-ar="ماعز حية" data-ku="بزنی زیندوو">Live Goats</option>
+            <option data-en="Fresh / Frozen Meat" data-ar="لحوم طازجة / مجمدة" data-ku="گۆشتی تازە / بەفراو">Fresh / Frozen Meat</option>
+            <option data-en="Poultry" data-ar="دواجن" data-ku="تووکەی ماڵەوە">Poultry</option>
+            <option data-en="Custom / Mixed Order" data-ar="طلب مخصص / مختلط" data-ku="داواکاری تایبەت / تێکەڵ">Custom / Mixed Order</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label data-en="Message & Quantity" data-ar="الرسالة والكمية" data-ku="نامە و دان">Message & Quantity</label>
+          <textarea placeholder="Please tell us the quantity, destination port, and any specific requirements..."></textarea>
+        </div>
+        <button type="submit" class="form-submit" data-en="📩 Send Inquiry" data-ar="📩 إرسال الاستفسار" data-ku="📩 ناردنی پرسیار">📩 Send Inquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-logo">Karo <span>Livestock</span></div>
+  <p data-en="© 2025 Karo Livestock. Latvia, European Union. All rights reserved." data-ar="© 2025 كارو للماشية. لاتفيا، الاتحاد الأوروبي. جميع الحقوق محفوظة." data-ku="© 2025 کارۆ لایڤستۆک. لاتڤیا، یەکێتیی ئەوروپی. هەموو مافەکان پارێزراون.">© 2025 Karo Livestock. Latvia, European Union. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="mailto:karanubeshop@gmail.com">Email</a>
+    <a href="https://wa.me/37127700121">WhatsApp</a>
+  </div>
+</footer>
+
+<script>
+// ── Language Switcher ────────────────────────────────────────────
+function setLang(lang) {
+  document.documentElement.lang = lang;
+
+  // Dir for RTL
+  const rtl = ['ar','ku'];
+  document.documentElement.dir = rtl.includes(lang) ? 'rtl' : 'ltr';
+
+  // Update all translatable elements
+  document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+    const val = el.getAttribute('data-' + lang);
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+      el.placeholder = val;
+    } else {
+      el.innerHTML = val;
+    }
+  });
+
+  // Update active button
+  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    if (btn.textContent.toLowerCase().includes(lang === 'ku' ? 'کوردی'.substring(0,2) : lang)) {
+      btn.classList.add('active');
+    }
+  });
+  const btns = document.querySelectorAll('.lang-btn');
+  btns.forEach(b => b.classList.remove('active'));
+  const idx = lang === 'en' ? 0 : lang === 'ar' ? 1 : 2;
+  btns[idx].classList.add('active');
+}
+
+// ── Form Submit ───────────────────────────────────────────────────
+function submitForm(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('.form-submit');
+  btn.textContent = '✅ Sent! We\'ll contact you within 24h.';
+  btn.style.background = 'var(--field)';
+  btn.disabled = true;
+}
+
+// ── Mobile nav ───────────────────────────────────────────────────
+const toggle = document.querySelector('.aq-mob-toggle');
+if (toggle) {
+  toggle.addEventListener('click', () => {
+    const links = document.querySelector('.nav-links');
+    if (links) {
+      links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+      links.style.flexDirection = 'column';
+      links.style.position = 'absolute';
+      links.style.top = '70px';
+      links.style.left = '0';
+      links.style.right = '0';
+      links.style.background = 'var(--cream)';
+      links.style.padding = '20px 40px';
+      links.style.borderBottom = '1px solid rgba(45,74,34,0.12)';
+    }
+  });
+}
+</script>
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Karo Livestock",
+  "url": "https://karolivestock.com",
+  "description": "Premium European livestock and meat export from Latvia to Iraq, Kurdistan and Middle East. EU certified, halal ready.",
+  "telephone": "+37127700121",
+  "email": "karanubeshop@gmail.com",
+  "address": {"@type": "PostalAddress", "addressCountry": "LV", "addressLocality": "Riga"},
+  "sameAs": [],
+  "areaServed": ["IQ", "KW", "SA", "AE", "JO", "TR"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Livestock & Meat Export",
+    "itemListElement": [
+      {"@type": "OfferCatalog", "name": "Live Cattle Export"},
+      {"@type": "OfferCatalog", "name": "Live Sheep & Lamb Export"},
+      {"@type": "OfferCatalog", "name": "Live Goat Export"},
+      {"@type": "OfferCatalog", "name": "Fresh & Frozen Meat"},
+      {"@type": "OfferCatalog", "name": "Poultry Export"}
+    ]
+  }
+}
+</script>
+
+</body>
+</html>
