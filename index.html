@@ -236,6 +236,56 @@
     .footer-links a { font-size: 12px; color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; }
     .footer-links a:hover { color: var(--gold); }
 
+
+    /* GALLERY */
+    .gallery-section { padding: 90px 40px; background: var(--ink); }
+    .gallery-section .section-eyebrow { color: var(--gold); }
+    .gallery-section .section-title { color: var(--white); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto auto;
+      gap: 4px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .gallery-item {
+      position: relative; overflow: hidden; cursor: pointer;
+      background: var(--earth);
+    }
+    .gallery-item.wide { grid-column: span 2; }
+    .gallery-item.tall { grid-row: span 2; }
+    .gallery-item img {
+      width: 100%; height: 100%; object-fit: cover;
+      display: block; transition: transform 0.5s ease;
+      min-height: 220px;
+    }
+    .gallery-item:hover img { transform: scale(1.04); }
+    .gallery-caption {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: linear-gradient(0deg, rgba(26,32,21,0.85) 0%, transparent 100%);
+      padding: 20px 18px 14px;
+      opacity: 0; transition: opacity 0.3s;
+    }
+    .gallery-item:hover .gallery-caption { opacity: 1; }
+    .gallery-caption span {
+      font-size: 12px; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--gold);
+    }
+    .gallery-caption p {
+      font-size: 11px; color: rgba(247,243,236,0.7); margin-top: 2px;
+    }
+    @media (max-width: 900px) {
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-item.wide { grid-column: span 2; }
+      .gallery-item.tall { grid-row: span 1; }
+      .gallery-section { padding: 60px 20px; }
+    }
+    @media (max-width: 500px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-item.wide { grid-column: span 1; }
+    }
+
     /* RESPONSIVE */
     @media (max-width: 900px) {
       nav { padding: 14px 20px; }
@@ -384,6 +434,105 @@
         <span class="animal-tag" data-en="All Breeds" data-ar="جميع السلالات" data-ku="هەموو جۆرەکان">All Breeds</span>
         <span class="animal-tag" data-en="Halal Ready" data-ar="جاهز للحلال" data-ku="ئامادەی حەڵاڵ">Halal Ready</span>
         <span class="animal-tag" data-en="Year-Round" data-ar="طوال العام" data-ku="تەواوی ساڵ">Year-Round</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <p class="section-eyebrow" data-en="Our Animals" data-ar="حيواناتنا" data-ku="حەیوانەکانمان">Our Animals</p>
+  <h2 class="section-title" data-en="European <em>Breeds</em> in their Natural Habitat" data-ar="<em>سلالات</em> أوروبية في موطنها الطبيعي" data-ku="جۆرە ئەوروپییەکان لە <em>ژینگەی</em> سروشتیدا">European <em>Breeds</em> in their Natural Habitat</h2>
+
+  <div class="gallery-grid">
+
+    <!-- 1: Holstein - wide -->
+    <div class="gallery-item wide">
+      <img src="https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?w=900&q=80&fit=crop"
+           alt="Holstein dairy cattle grazing on European meadow — Karo Livestock export"
+           loading="lazy" />
+      <div class="gallery-caption">
+        <span>Holstein</span>
+        <p data-en="Dairy & dual-purpose breed — Europe's most popular" data-ar="سلالة حلوب ومزدوجة الغرض — الأكثر شيوعاً في أوروبا" data-ku="جۆری شیرەمەنی و دووبەرهەم — باوترین لە ئەوروپا">Dairy & dual-purpose breed — Europe's most popular</p>
+      </div>
+    </div>
+
+    <!-- 2: Meadow landscape - tall -->
+    <div class="gallery-item tall">
+      <img src="https://images.unsplash.com/photo-1500076656116-558758c991c1?w=600&q=80&fit=crop"
+           alt="Green European meadow and farmland — premium livestock sourcing"
+           loading="lazy" />
+      <div class="gallery-caption">
+        <span data-en="European Pastures" data-ar="مراعي أوروبية" data-ku="مەرعی ئەوروپی">European Pastures</span>
+        <p data-en="Sourced from the finest farms across all EU countries" data-ar="مصدرها أفضل المزارع في جميع دول الاتحاد الأوروبي" data-ku="لە باشترین جووتیارییەکانی هەموو وڵاتەکانی ئەوروپا">Sourced from the finest farms across all EU countries</p>
+      </div>
+    </div>
+
+    <!-- 3: Charolais -->
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1545468600-c3d20fe85285?w=600&q=80&fit=crop"
+           alt="Charolais beef cattle herd in pasture — premium European beef breed"
+           loading="lazy" />
+      <div class="gallery-caption">
+        <span>Charolais</span>
+        <p data-en="Premium French beef breed — high muscle yield" data-ar="سلالة لحوم فرنسية فاخرة — إنتاج عالٍ من العضلات" data-ku="جۆری گۆشتی فەرەنسیی باڵا — درێژکراوەی مسکووی بەرز">Premium French beef breed — high muscle yield</p>
+      </div>
+    </div>
+
+    <!-- 4: Limousin -->
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600&q=80&fit=crop"
+           alt="Limousin cattle in green field — European beef breed for export"
+           loading="lazy" />
+      <div class="gallery-caption">
+        <span>Limousin</span>
+        <p data-en="French beef breed — lean, tender, widely exported" data-ar="سلالة لحوم فرنسية — خالية من الدهون وطرية وتُصدَّر على نطاق واسع" data-ku="جۆری گۆشتی فەرەنسی — بێ چەوری، نەرم، بە شێوەی گستراو هەناردەدەکرێت">French beef breed — lean, tender, widely exported</p>
+      </div>
+    </div>
+
+    <!-- 5: Cattle herd - wide -->
+    <div class="gallery-item wide">
+      <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=900&q=80&fit=crop"
+           alt="Mixed cattle herd grazing on green European farmland — bulk export"
+           loading="lazy" />
+      <div class="gallery-caption">
+        <span data-en="Bulk Cattle Orders" data-ar="طلبات الأبقار الكبيرة" data-ku="داواکاری گاوی کۆ">Bulk Cattle Orders</span>
+        <p data-en="Full truckloads, containers and airfreight — any quantity" data-ar="حمولات شاحنات كاملة وحاويات وشحن جوي — أي كمية" data-ku="تریلەری تەواو، کونتێینەر و بار هەوایی — هەر دانێک">Full truckloads, containers and airfreight — any quantity</p>
+      </div>
+    </div>
+
+    <!-- 6: Merino sheep -->
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1484557985045-edf25e08da73?w=600&q=80&fit=crop"
+           alt="Merino sheep flock on green meadow — premium wool and meat breed"
+           loading="lazy" />
+      <div class="gallery-caption">
+        <span>Merino</span>
+        <p data-en="Fine wool & meat breed — globally recognized quality" data-ar="سلالة صوف ولحوم رفيعة — جودة معترف بها عالمياً" data-ku="جۆری پەشمی نازک و گۆشت — کوالیتەی جیهانی پێناسکراو">Fine wool & meat breed — globally recognized quality</p>
+      </div>
+    </div>
+
+    <!-- 7: Sheep flock meadow -->
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1548445929-4f60a497f851?w=600&q=80&fit=crop"
+           alt="Sheep flock grazing on green European pasture — Ile de France breed"
+           loading="lazy" />
+      <div class="gallery-caption">
+        <span>Île de France & Texel</span>
+        <p data-en="Meat sheep — ideal for Middle Eastern markets" data-ar="أغنام لحوم — مثالية لأسواق الشرق الأوسط" data-ku="مەڕی گۆشت — گونجاوی بازاڕەکانی ڕۆژهەڵاتی ناوەڕاست">Meat sheep — ideal for Middle Eastern markets</p>
+      </div>
+    </div>
+
+    <!-- 8: Farm landscape -->
+    <div class="gallery-item wide">
+      <img src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?w=900&q=80&fit=crop"
+           alt="European farm fields and countryside — source of premium livestock for export"
+           loading="lazy" />
+      <div class="gallery-caption">
+        <span data-en="All of Europe" data-ar="كل أوروبا" data-ku="هەموو ئەوروپا">All of Europe</span>
+        <p data-en="We source from the best farms in EU — France, Germany, Netherlands, Poland, Balkans and more" data-ar="نُوفّر من أفضل المزارع في الاتحاد الأوروبي — فرنسا وألمانيا وهولندا وبولندا والبلقان والمزيد" data-ku="ئێمە لە باشترین جووتیارییەکانی ئەوروپا دابین دەکەین — فەرەنسا، ئەڵمانیا، هۆڵەندا، پۆڵەندا، باڵکان و زیاتر">We source from the best farms in EU — France, Germany, Netherlands, Poland, Balkans and more</p>
       </div>
     </div>
 
