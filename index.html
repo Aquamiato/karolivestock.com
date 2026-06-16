@@ -218,6 +218,22 @@
     }
     .form-submit:hover { background: var(--field); }
 
+
+    /* WA tooltip */
+    .wa-float { flex-direction: column; position: relative; }
+    .wa-icon { font-size: 28px; line-height: 1; }
+    .wa-tooltip {
+      position: absolute; right: 68px; top: 50%;
+      transform: translateY(-50%);
+      background: #1a2015; color: #f7f3ec;
+      font-size: 12px; font-weight: 500;
+      padding: 6px 12px; white-space: nowrap;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.2s;
+      border-left: 2px solid #25d366;
+    }
+    .wa-float:hover .wa-tooltip { opacity: 1; }
+
     /* WA FLOAT */
     .wa-float {
       position: fixed; bottom: 28px; right: 28px; z-index: 999;
@@ -329,7 +345,11 @@
 <body>
 
 <!-- WhatsApp Float -->
-<a href="https://wa.me/37127700121" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<!-- WhatsApp Float — numara gizli -->
+<a href="https://wa.me/37127700121" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <span class="wa-icon">💬</span>
+  <span class="wa-tooltip" data-en="Chat on WhatsApp" data-ar="تواصل عبر واتساب" data-ku="واتساپمان بکە">Chat on WhatsApp</span>
+</a>
 
 <!-- Language Bar -->
 <div class="lang-bar">
@@ -726,17 +746,18 @@
       </p>
       <div class="contact-items">
         <div class="contact-item">
-          <div class="contact-icon">📱</div>
+          <div class="contact-icon">💬</div>
           <div class="contact-item-text">
-            <span data-en="WhatsApp / Phone" data-ar="واتساب / هاتف" data-ku="واتساپ / تەلەفۆن">WhatsApp / Phone</span>
-            <a href="https://wa.me/37127700121">+371 277 001 21</a>
+            <span data-en="WhatsApp" data-ar="واتساب" data-ku="واتساپ">WhatsApp</span>
+            <a href="https://wa.me/37127700121" data-en="Click to chat on WhatsApp" data-ar="انقر للتواصل عبر واتساب" data-ku="کلیک بکە بۆ قسەکردن لە واتساپ">Click to chat on WhatsApp</a>
           </div>
         </div>
         <div class="contact-item">
           <div class="contact-icon">📧</div>
           <div class="contact-item-text">
             <span>Email</span>
-            <a href="mailto:karanubeshop@gmail.com">karanubeshop@gmail.com</a>
+            <a href="#contact" onclick="document.querySelector('.contact-form textarea').focus(); return false;"
+               data-en="Send us a message via the form →" data-ar="أرسل لنا رسالة عبر النموذج ←" data-ku="پەیاممان بنێرە بە فۆرمەکەوە ←">Send us a message via the form →</a>
           </div>
         </div>
         <div class="contact-item">
@@ -815,7 +836,7 @@
   <div class="footer-logo">Karo <span>Livestock</span></div>
   <p data-en="© 2025 Karo Livestock. Riga, Latvia — European Union. All rights reserved." data-ar="© 2025 كارو للماشية. ريغا، لاتفيا — الاتحاد الأوروبي. جميع الحقوق محفوظة." data-ku="© 2025 کارۆ لایڤستۆک. ریگا، لاتڤیا — یەکێتیی ئەوروپی. هەموو مافەکان پارێزراون.">© 2025 Karo Livestock. Riga, Latvia — European Union. All rights reserved.</p>
   <div class="footer-links">
-    <a href="mailto:karanubeshop@gmail.com">Email</a>
+    <a href="#contact" onclick="document.querySelector('.contact-form textarea').focus(); return false;" data-en="Email Us" data-ar="راسلنا" data-ku="ئیمەیلمان بکە">Email Us</a>
     <a href="https://wa.me/37127700121">WhatsApp</a>
   </div>
 </footer>
@@ -836,10 +857,35 @@ function setLang(lang) {
 
 function submitForm(e) {
   e.preventDefault();
-  const btn = e.target.querySelector('.form-submit');
-  btn.textContent = '✅ Sent! We will contact you within 24 hours.';
+  const form = e.target;
+  const name    = form.querySelector('input[type=text]')?.value || '';
+  const country = form.querySelector('select')?.value || '';
+  const phone   = form.querySelector('input[type=tel]')?.value || '';
+  const animal  = form.querySelectorAll('select')[1]?.value || '';
+  const transport = form.querySelectorAll('select')[2]?.value || '';
+  const message = form.querySelector('textarea')?.value || '';
+
+  const subject = encodeURIComponent('Livestock Inquiry — ' + animal + ' — ' + country);
+  const body = encodeURIComponent(
+    'Name: ' + name + '\n' +
+    'Country: ' + country + '\n' +
+    'Phone/WhatsApp: ' + phone + '\n' +
+    'Animal: ' + animal + '\n' +
+    'Transport: ' + transport + '\n' +
+    '\nMessage:\n' + message
+  );
+
+  // Email gizli — encoded
+  const e1 = 'karanube'; const e2 = 'shop@gma'; const e3 = 'il.com';
+  window.location.href = 'mailto:' + e1 + e2 + e3 + '?subject=' + subject + '&body=' + body;
+
+  const btn = form.querySelector('.form-submit');
+  btn.textContent = '✅ Opening your email app...';
   btn.style.background = 'var(--field)';
-  btn.disabled = true;
+  setTimeout(() => {
+    btn.textContent = '📩 Send Inquiry';
+    btn.style.background = '';
+  }, 3000);
 }
 
 // Mobile nav
