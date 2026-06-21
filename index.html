@@ -220,7 +220,7 @@
       font-weight: 700;
       margin-bottom: 18px;
     }
-    h1 {
+    .hero h1 {
       font-family: "Playfair Display", Georgia, serif;
       font-size: clamp(2.2rem, 5vw, 4.2rem);
       line-height: 1.05;
@@ -277,11 +277,15 @@
 
     main section { padding: clamp(64px, 8vw, 98px) 0; }
     .container { width: var(--container); margin: 0 auto; }
-    .section-head { margin-bottom: 32px; max-width: 740px; }
+    .section-head {
+      --section-heading-color: var(--navy-900);
+      margin-bottom: 32px;
+      max-width: 740px;
+    }
     .section-head h2 {
       font-family: "Playfair Display", Georgia, serif;
       font-size: clamp(1.8rem, 3.3vw, 3rem);
-      color: var(--navy-900);
+      color: var(--section-heading-color);
       line-height: 1.2;
       margin-bottom: 12px;
     }
@@ -350,7 +354,7 @@
       background: linear-gradient(180deg, var(--navy-900), #122743);
       color: var(--white);
     }
-    .process .section-head h2,
+    .process .section-head { --section-heading-color: var(--white); }
     .process .section-head p { color: var(--white); }
     .process-grid {
       display: grid;
@@ -459,14 +463,16 @@
       grid-template-columns: 1fr 1fr;
       gap: 10px;
     }
-    label {
+    .contact-form label {
       font-size: .8rem;
       letter-spacing: .03em;
       text-transform: uppercase;
       color: rgba(255,255,255,.76);
       font-weight: 700;
     }
-    input, select, textarea {
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
       width: 100%;
       border-radius: 10px;
       border: 1px solid rgba(255,255,255,.3);
