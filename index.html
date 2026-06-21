@@ -11,14 +11,25 @@
   <title>Karo Livestock | Premium European Cattle & Sheep Export to Iraq & Middle East</title>
   <meta name="description" content="Karo Livestock — premium live cattle and sheep export from all across Europe to Iraq, Kurdistan and Middle East. All breeds. Truck, ship or air freight. EU certified, halal-ready." />
   <meta name="keywords" content="livestock export Iraq, live cattle Middle East, sheep export Iraq, meat export Europe, European livestock, cattle export Kurdistan, live animals Iraq, halal livestock export, wholesale cattle, sheep export Middle East, livestock transport truck ship air, all breeds cattle sheep Europe" />
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="theme-color" content="#2d4a22" />
   <link rel="canonical" href="https://karolivestock.com/" />
   <meta property="og:title" content="Karo Livestock | European Cattle & Sheep Export to Iraq & Middle East" />
   <meta property="og:description" content="Premium live cattle and sheep from all across Europe to Iraq, Kurdistan and Middle East. All breeds. Truck, ship or air." />
   <meta property="og:url" content="https://karolivestock.com/" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Karo Livestock" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/Aquamiato/karolivestock.com/main/images/holstein-barn-row-latvia-farm.jpg" />
+  <meta property="og:image:alt" content="Holstein cattle in a large EU-certified barn in Latvia" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Karo Livestock | European Cattle & Sheep Export to Iraq & Middle East" />
+  <meta name="twitter:description" content="Premium live cattle and sheep export from Europe to Iraq, Kurdistan and the Middle East." />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/Aquamiato/karolivestock.com/main/images/holstein-barn-row-latvia-farm.jpg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <style>
@@ -359,8 +370,8 @@
 </div>
 
 <!-- Nav -->
-<nav>
-  <a href="#" class="nav-logo">
+<nav aria-label="Primary">
+  <a href="#top" class="nav-logo">
     <div class="logo-mark">🐄</div>
     <div>
       <div class="logo-name">Karo Livestock</div>
@@ -369,6 +380,7 @@
   </a>
   <ul class="nav-links">
     <li><a href="#animals" data-en="Animals" data-ar="الحيوانات" data-ku="حەیوانەکان">Animals</a></li>
+    <li><a href="#gallery" data-en="Gallery" data-ar="المعرض" data-ku="وێنەکان">Gallery</a></li>
     <li><a href="#transport" data-en="Transport" data-ar="النقل" data-ku="گواستنەوە">Transport</a></li>
     <li><a href="#why" data-en="Why Us" data-ar="لماذا نحن" data-ku="بۆچی ئێمە">Why Us</a></li>
     <li><a href="#contact" data-en="Contact" data-ar="اتصل بنا" data-ku="پەیوەندی">Contact</a></li>
@@ -378,7 +390,8 @@
 </nav>
 
 <!-- Hero -->
-<section class="hero">
+<main>
+<section id="top" class="hero">
   <div class="hero-content">
     <p class="hero-eyebrow" data-en="All of Europe → Iraq & Middle East" data-ar="كل أوروبا → العراق والشرق الأوسط" data-ku="هەموو ئەوروپا → عێراق و ڕۆژهەڵاتی ناوەڕاست">All of Europe → Iraq & Middle East</p>
     <h1 class="hero-title" data-en="Premium Cattle & Sheep,<br/><em>All Breeds.</em><br/>All Routes." data-ar="أبقار وأغنام فاخرة،<br/><em>جميع السلالات.</em><br/>جميع المسارات." data-ku="گاو و مەڕی باڵا،<br/><em>هەموو جۆرەکان.</em><br/>هەموو ڕێگاکان.">Premium Cattle & Sheep,<br/><em>All Breeds.</em><br/>All Routes.</h1>
@@ -484,7 +497,7 @@
 
 
 <!-- GALLERY -->
-<section class="gallery-section">
+<section id="gallery" class="gallery-section">
   <p class="section-eyebrow" data-en="Our Animals & Products" data-ar="حيواناتنا ومنتجاتنا" data-ku="حەیوان و بەرهەمەکانمان">Our Animals & Products</p>
   <h2 class="section-title" data-en="Real Farms. Real Animals. <em>Real Quality.</em>" data-ar="مزارع حقيقية. حيوانات حقيقية. <em>جودة حقيقية.</em>" data-ku="جووتیارییەکی ڕاستەقینە. حەیوانی ڕاستەقینە. <em>کوالیتەی ڕاستەقینە.</em>">Real Farms. Real Animals. <em>Real Quality.</em></h2>
 
@@ -764,7 +777,7 @@
           <div class="contact-icon">📍</div>
           <div class="contact-item-text">
             <span data-en="Based in" data-ar="مقرنا في" data-ku="بنکەمان لە">Based in</span>
-            <a href="#">Riga, Latvia — European Union 🇱🇻</a>
+            <a href="https://maps.google.com/?q=Riga,+Latvia" target="_blank" rel="noopener">Riga, Latvia — European Union 🇱🇻</a>
           </div>
         </div>
       </div>
@@ -830,6 +843,7 @@
     </form>
   </div>
 </section>
+</main>
 
 <!-- Footer -->
 <footer>
@@ -911,25 +925,77 @@ if (toggle) {
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Karo Livestock",
-  "url": "https://karolivestock.com",
-  "description": "Premium European cattle and sheep export from all across Europe to Iraq, Kurdistan and Middle East. All breeds, truck, ship or air freight.",
-  "telephone": "+37127700121",
-  "email": "karanubeshop@gmail.com",
-  "address": {"@type": "PostalAddress", "addressCountry": "LV", "addressLocality": "Riga"},
-  "areaServed": ["IQ", "KW", "SA", "AE", "JO", "QA", "LB", "OM"],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Livestock Export",
-    "itemListElement": [
-      {"@type": "OfferCatalog", "name": "Live Cattle Export — All European Breeds"},
-      {"@type": "OfferCatalog", "name": "Live Sheep & Lamb Export — All European Breeds"},
-      {"@type": "OfferCatalog", "name": "Truck Transport (TIR)"},
-      {"@type": "OfferCatalog", "name": "Sea Freight — Container Ships"},
-      {"@type": "OfferCatalog", "name": "Air Freight — Live Animals"}
-    ]
-  }
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://karolivestock.com/#organization",
+      "name": "Karo Livestock",
+      "url": "https://karolivestock.com/",
+      "description": "Premium European cattle and sheep export from all across Europe to Iraq, Kurdistan and Middle East. All breeds, truck, ship or air freight.",
+      "telephone": "+37127700121",
+      "email": "karanubeshop@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Riga",
+        "addressCountry": "LV"
+      },
+      "areaServed": ["IQ", "KW", "SA", "AE", "JO", "QA", "LB", "OM"],
+      "sameAs": [
+        "https://wa.me/37127700121"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "telephone": "+37127700121",
+          "availableLanguage": ["en", "ar", "ku"]
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Livestock and Halal Meat Export",
+        "itemListElement": [
+          { "@type": "OfferCatalog", "name": "Live Cattle Export — All European Breeds" },
+          { "@type": "OfferCatalog", "name": "Live Sheep & Lamb Export — All European Breeds" },
+          { "@type": "OfferCatalog", "name": "Halal Beef Export from Latvia" },
+          { "@type": "OfferCatalog", "name": "Truck (TIR), Livestock Vessel and Air Freight Transport" }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://karolivestock.com/#website",
+      "url": "https://karolivestock.com/",
+      "name": "Karo Livestock",
+      "publisher": {
+        "@id": "https://karolivestock.com/#organization"
+      },
+      "inLanguage": ["en", "ar", "ku"]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://karolivestock.com/#webpage",
+      "url": "https://karolivestock.com/",
+      "name": "Karo Livestock | Premium European Cattle & Sheep Export to Iraq & Middle East",
+      "description": "Karo Livestock exports live cattle, sheep, lambs and halal beef from Europe to Iraq, Kurdistan and the wider Middle East.",
+      "isPartOf": {
+        "@id": "https://karolivestock.com/#website"
+      },
+      "about": {
+        "@id": "https://karolivestock.com/#organization"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://karolivestock.com/#service",
+      "name": "European Livestock Export Service",
+      "provider": {
+        "@id": "https://karolivestock.com/#organization"
+      },
+      "serviceType": "Live cattle, sheep and halal meat export",
+      "areaServed": ["IQ", "KW", "SA", "AE", "JO", "QA", "LB", "OM"]
+    }
+  ]
 }
 </script>
 
