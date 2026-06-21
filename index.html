@@ -1,937 +1,820 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <!-- Favicons -->
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.svg">
-  <meta name="msapplication-TileColor" content="#2d4a22">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Karo Livestock | Premium European Cattle & Sheep Export to Iraq & Middle East</title>
-  <meta name="description" content="Karo Livestock — premium live cattle and sheep export from all across Europe to Iraq, Kurdistan and Middle East. All breeds. Truck, ship or air freight. EU certified, halal-ready." />
-  <meta name="keywords" content="livestock export Iraq, live cattle Middle East, sheep export Iraq, meat export Europe, European livestock, cattle export Kurdistan, live animals Iraq, halal livestock export, wholesale cattle, sheep export Middle East, livestock transport truck ship air, all breeds cattle sheep Europe" />
-  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Karo Livestock | Premium Corporate Livestock Export from Europe to Iraq & Middle East</title>
+  <meta name="description" content="Karo Livestock exports live cattle, sheep, goats and premium meat from Latvia (EU) to Iraq, Kurdistan and the Middle East with truck, ship and air logistics support." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://karolivestock.com/" />
-  <meta property="og:title" content="Karo Livestock | European Cattle & Sheep Export to Iraq & Middle East" />
-  <meta property="og:description" content="Premium live cattle and sheep from all across Europe to Iraq, Kurdistan and Middle East. All breeds. Truck, ship or air." />
-  <meta property="og:url" content="https://karolivestock.com/" />
-  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f172a" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Karo Livestock" />
+  <meta property="og:title" content="Karo Livestock | Premium Corporate Livestock Export" />
+  <meta property="og:description" content="European livestock and premium meat export from Latvia to Iraq, Kurdistan and the Middle East." />
+  <meta property="og:url" content="https://karolivestock.com/" />
+  <meta property="og:image" content="https://karolivestock.com/images/holstein-dairy-barn-modern-latvia.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Karo Livestock | Premium Corporate Livestock Export" />
+  <meta name="twitter:description" content="Live cattle, sheep, goats and premium meat export from Europe to Iraq, Kurdistan and the Middle East." />
+  <meta name="twitter:image" content="https://karolivestock.com/images/holstein-dairy-barn-modern-latvia.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />
+  <link rel="preload" as="image" href="/images/holstein-dairy-barn-modern-latvia.jpg" />
 
   <style>
     :root {
-      --earth:  #2d4a22;
-      --field:  #4a7c35;
-      --gold:   #c8951a;
-      --cream:  #f7f3ec;
-      --soil:   #8b5e3c;
-      --smoke:  #5a6e52;
-      --ink:    #1a2015;
-      --white:  #ffffff;
-      --serif:  'Playfair Display', Georgia, serif;
-      --sans:   'Inter', system-ui, sans-serif;
+      --navy-950: #0b1220;
+      --navy-900: #0f172a;
+      --slate-700: #334155;
+      --slate-600: #475569;
+      --slate-300: #cbd5e1;
+      --slate-100: #f1f5f9;
+      --white: #ffffff;
+      --gold: #c8a46b;
+      --gold-strong: #b58e4f;
+      --line: #dbe2ea;
+      --container: min(1120px, 92vw);
+      --radius-lg: 18px;
+      --radius-md: 12px;
+      --shadow: 0 14px 30px rgba(15, 23, 42, 0.09);
     }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { font-family: var(--sans); background: var(--cream); color: var(--ink); overflow-x: hidden; }
-
-    /* LANG BAR */
-    .lang-bar {
-      background: var(--ink);
-      display: flex; justify-content: flex-end; align-items: center;
-      padding: 8px 40px; gap: 4px;
-    }
-    .lang-btn {
-      background: none; border: 1px solid rgba(255,255,255,0.2);
-      color: rgba(255,255,255,0.6); font-family: var(--sans);
-      font-size: 11px; letter-spacing: 0.1em; padding: 4px 12px;
-      cursor: pointer; transition: all 0.2s;
-    }
-    .lang-btn:hover, .lang-btn.active {
-      background: var(--gold); color: var(--white); border-color: var(--gold);
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--navy-900);
+      background: var(--white);
+      line-height: 1.6;
     }
 
-    /* NAV */
-    nav {
-      position: sticky; top: 0; z-index: 100;
-      background: rgba(247,243,236,0.96); backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(45,74,34,0.12);
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 16px 40px;
-    }
-    .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-    .logo-mark {
-      width: 44px; height: 44px; background: var(--earth);
-      display: flex; align-items: center; justify-content: center; font-size: 22px;
-    }
-    .logo-name { font-family: var(--serif); font-size: 20px; font-weight: 700; color: var(--earth); line-height: 1; }
-    .logo-sub { font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--smoke); margin-top: 2px; }
-    .nav-links { display: flex; gap: 32px; list-style: none; }
-    .nav-links a { font-size: 13px; font-weight: 500; color: var(--ink); text-decoration: none; transition: color 0.2s; }
-    .nav-links a:hover { color: var(--field); }
-    .nav-cta {
-      background: var(--earth); color: var(--white); border: none;
-      padding: 10px 24px; font-size: 13px; font-weight: 500;
-      cursor: pointer; text-decoration: none; transition: background 0.2s;
-    }
-    .nav-cta:hover { background: var(--field); }
-    .aq-mob-toggle { display: none; background: none; border: none; cursor: pointer; font-size: 1.4rem; color: var(--earth); }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
 
-    /* HERO */
-    .hero {
-      background: var(--earth); padding: 90px 40px 70px;
-      display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
-      align-items: center; min-height: 88vh; position: relative; overflow: hidden;
-    }
-    .hero::before {
-      content: ''; position: absolute; inset: 0;
-      background: radial-gradient(ellipse at 65% 40%, rgba(200,149,26,0.1) 0%, transparent 60%);
-      pointer-events: none;
-    }
-    .hero-content { position: relative; z-index: 2; }
-    .hero-eyebrow { font-size: 10px; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; }
-    .hero-title { font-family: var(--serif); font-size: clamp(38px, 5vw, 68px); font-weight: 700; color: var(--white); line-height: 1.08; margin-bottom: 28px; }
-    .hero-title em { font-style: italic; color: var(--gold); }
-    .hero-desc { font-size: 16px; font-weight: 300; color: rgba(247,243,236,0.75); line-height: 1.8; max-width: 460px; margin-bottom: 44px; }
-    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
-    .btn-primary {
-      background: var(--gold); color: var(--white); padding: 14px 32px;
-      font-size: 13px; font-weight: 600; border: none; cursor: pointer;
-      text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
-      transition: all 0.2s;
-    }
-    .btn-primary:hover { background: #e0a820; transform: translateY(-1px); }
-    .btn-outline {
-      background: transparent; color: rgba(247,243,236,0.8); padding: 14px 32px;
-      font-size: 13px; font-weight: 500; border: 1px solid rgba(247,243,236,0.3);
-      cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
-      transition: all 0.2s;
-    }
-    .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
-
-    /* Transport badges */
-    .transport-badges { display: flex; gap: 12px; margin-top: 48px; flex-wrap: wrap; }
-    .t-badge {
-      background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15);
-      color: rgba(247,243,236,0.85); padding: 10px 18px;
-      font-size: 12px; font-weight: 500; display: flex; align-items: center; gap: 8px;
-    }
-    .t-badge span { font-size: 18px; }
-
-    /* Route visual */
-    .hero-visual { position: relative; display: flex; align-items: center; justify-content: center; }
-    .route-box {
-      background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
-      padding: 40px 32px; width: 100%; max-width: 420px;
-    }
-    .route-title { font-family: var(--serif); font-size: 14px; font-style: italic; color: rgba(247,243,236,0.5); margin-bottom: 28px; letter-spacing: 0.05em; }
-    .route-line { display: flex; align-items: center; gap: 0; margin-bottom: 12px; }
-    .route-node {
-      background: rgba(255,255,255,0.08); color: var(--white);
-      padding: 10px 14px; font-size: 12px; font-weight: 500; flex: 1; text-align: center;
-    }
-    .route-node.origin { background: var(--field); }
-    .route-node.dest { background: rgba(200,149,26,0.3); }
-    .route-arrow { color: var(--gold); font-size: 16px; padding: 0 8px; flex-shrink: 0; }
-    .route-divider { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 20px 0; }
-    .route-stat { display: flex; justify-content: space-between; margin-bottom: 10px; }
-    .route-stat-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(247,243,236,0.4); }
-    .route-stat-val { font-size: 13px; font-weight: 500; color: var(--gold); }
-
-    /* SECTION COMMON */
-    .section-eyebrow { font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; text-align: center; }
-    .section-title { font-family: var(--serif); font-size: clamp(30px, 4vw, 50px); font-weight: 600; line-height: 1.1; text-align: center; margin-bottom: 56px; color: var(--earth); }
-    .section-title em { font-style: italic; color: var(--gold); }
-
-    /* ANIMALS */
-    .animals-section { padding: 90px 40px; background: var(--white); }
-    .animals-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; max-width: 900px; margin: 0 auto; }
-    .animal-card { background: var(--cream); padding: 48px 40px; position: relative; transition: background 0.3s; }
-    .animal-card:hover { background: var(--earth); }
-    .animal-card:hover .animal-name, .animal-card:hover .animal-desc { color: var(--white); }
-    .animal-card:hover .animal-tag { background: rgba(255,255,255,0.12); color: var(--gold); }
-    .animal-icon { font-size: 52px; margin-bottom: 24px; display: block; }
-    .animal-name { font-family: var(--serif); font-size: 28px; font-weight: 600; color: var(--earth); margin-bottom: 14px; transition: color 0.3s; }
-    .animal-desc { font-size: 14px; color: var(--smoke); line-height: 1.8; margin-bottom: 24px; transition: color 0.3s; }
-    .animal-tags { display: flex; gap: 8px; flex-wrap: wrap; }
-    .animal-tag { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; background: rgba(45,74,34,0.08); color: var(--earth); padding: 4px 10px; transition: all 0.3s; }
-
-    /* TRANSPORT */
-    .transport-section { padding: 90px 40px; background: var(--earth); }
-    .transport-section .section-title { color: var(--white); }
-    .transport-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; max-width: 1000px; margin: 0 auto; }
-    .transport-card { background: rgba(255,255,255,0.05); padding: 44px 32px; border-top: 3px solid rgba(200,149,26,0.4); transition: background 0.2s; }
-    .transport-card:hover { background: rgba(255,255,255,0.09); }
-    .transport-icon { font-size: 48px; margin-bottom: 20px; display: block; }
-    .transport-name { font-family: var(--serif); font-size: 24px; font-weight: 600; color: var(--white); margin-bottom: 12px; }
-    .transport-desc { font-size: 13px; color: rgba(247,243,236,0.55); line-height: 1.75; }
-    .transport-detail { margin-top: 20px; font-size: 12px; color: var(--gold); font-weight: 500; }
-
-    /* WHY US */
-    .why-section { padding: 90px 40px; background: var(--cream); }
-    .why-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; max-width: 1100px; margin: 0 auto; align-items: start; }
-    .why-list { list-style: none; display: flex; flex-direction: column; gap: 24px; }
-    .why-item { display: flex; gap: 16px; align-items: flex-start; }
-    .why-icon { width: 42px; height: 42px; background: var(--earth); display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
-    .why-item-text h4 { font-size: 15px; font-weight: 600; color: var(--earth); margin-bottom: 5px; }
-    .why-item-text p { font-size: 13px; color: var(--smoke); line-height: 1.7; }
-    .why-panel { background: var(--earth); padding: 52px 40px; }
-    .why-panel h3 { font-family: var(--serif); font-size: 30px; font-weight: 600; color: var(--white); line-height: 1.2; margin-bottom: 28px; }
-    .why-panel h3 em { font-style: italic; color: var(--gold); }
-    .coverage-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
-    .coverage-list li { font-size: 14px; color: rgba(247,243,236,0.75); display: flex; align-items: center; gap: 10px; }
-    .coverage-list li::before { content: '→'; color: var(--gold); font-weight: 600; }
-
-    /* CONTACT */
-    .contact-section { padding: 90px 40px; background: var(--white); }
-    .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; max-width: 1100px; margin: 0 auto; }
-    .contact-info h2 { font-family: var(--serif); font-size: 40px; font-weight: 600; color: var(--earth); margin-bottom: 20px; line-height: 1.15; }
-    .contact-info h2 em { font-style: italic; color: var(--gold); }
-    .contact-info p { font-size: 15px; color: var(--smoke); line-height: 1.8; margin-bottom: 36px; }
-    .contact-items { display: flex; flex-direction: column; gap: 20px; }
-    .contact-item { display: flex; align-items: center; gap: 16px; }
-    .contact-icon { width: 44px; height: 44px; background: var(--cream); display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
-    .contact-item-text span { display: block; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--smoke); margin-bottom: 3px; }
-    .contact-item-text a { color: var(--earth); text-decoration: none; font-weight: 500; font-size: 15px; }
-    .contact-item-text a:hover { color: var(--gold); }
-
-    /* FORM */
-    .contact-form { display: flex; flex-direction: column; gap: 16px; }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .form-group { display: flex; flex-direction: column; gap: 6px; }
-    .form-group label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--smoke); font-weight: 500; }
-    .form-group input, .form-group select, .form-group textarea {
-      background: var(--cream); border: 1px solid rgba(45,74,34,0.15);
-      color: var(--ink); padding: 12px 16px; font-family: var(--sans);
-      font-size: 14px; outline: none; transition: border-color 0.2s; width: 100%;
-    }
-    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--field); }
-    .form-group textarea { resize: vertical; min-height: 120px; }
-    .form-submit {
-      background: var(--earth); color: var(--white); border: none;
-      padding: 15px 36px; font-family: var(--sans); font-size: 13px;
-      font-weight: 600; letter-spacing: 0.06em; cursor: pointer;
-      transition: background 0.2s; align-self: flex-start;
-    }
-    .form-submit:hover { background: var(--field); }
-
-
-    /* WA tooltip */
-    .wa-float { flex-direction: column; position: relative; }
-    .wa-icon { font-size: 28px; line-height: 1; }
-    .wa-tooltip {
-      position: absolute; right: 68px; top: 50%;
-      transform: translateY(-50%);
-      background: #1a2015; color: #f7f3ec;
-      font-size: 12px; font-weight: 500;
-      padding: 6px 12px; white-space: nowrap;
-      opacity: 0; pointer-events: none;
-      transition: opacity 0.2s;
-      border-left: 2px solid #25d366;
-    }
-    .wa-float:hover .wa-tooltip { opacity: 1; }
-
-    /* WA FLOAT */
-    .wa-float {
-      position: fixed; bottom: 28px; right: 28px; z-index: 999;
-      width: 58px; height: 58px; background: #25d366; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 28px; box-shadow: 0 6px 24px rgba(37,211,102,0.4);
-      text-decoration: none; transition: transform 0.2s;
-    }
-    .wa-float:hover { transform: scale(1.1); }
-
-    /* FOOTER */
-    footer {
-      background: var(--ink); padding: 48px 40px;
-      display: flex; justify-content: space-between; align-items: center;
-      flex-wrap: wrap; gap: 24px;
-    }
-    .footer-logo { font-family: var(--serif); font-size: 20px; font-weight: 700; color: var(--white); }
-    .footer-logo span { color: var(--gold); }
-    footer p { font-size: 12px; color: rgba(255,255,255,0.3); }
-    .footer-links { display: flex; gap: 24px; }
-    .footer-links a { font-size: 12px; color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; }
-    .footer-links a:hover { color: var(--gold); }
-
-
-        /* GALLERY */
-    .gallery-section { padding: 90px 40px; background: var(--ink); }
-    .gallery-section .section-eyebrow { color: var(--gold); }
-    .gallery-section .section-title { color: var(--white); margin-bottom: 60px; }
-
-    /* Category block */
-    .gallery-category { max-width: 1200px; margin: 0 auto 64px; }
-    .gallery-category:last-child { margin-bottom: 0; }
-    .gallery-cat-label {
-      display: flex; align-items: center; gap: 12px;
-      margin-bottom: 24px;
-      padding-bottom: 14px;
-      border-bottom: 2px solid rgba(200,149,26,0.3);
-    }
-    .cat-icon { font-size: 28px; }
-    .cat-title {
-      font-family: var(--serif); font-size: 22px; font-weight: 600;
-      color: var(--gold); letter-spacing: 0.03em;
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: var(--gold);
+      color: var(--navy-950);
+      font-weight: 700;
+      padding: 0.75rem 1rem;
+      z-index: 1000;
     }
 
-    /* Cards row */
-    .gallery-row {
+    .skip-link:focus { left: 0.5rem; top: 0.5rem; }
+
+    .topbar {
+      background: var(--navy-950);
+      color: #dbe4f2;
+      font-size: 0.86rem;
+    }
+
+    .topbar-inner {
+      width: var(--container);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.6rem 0;
+      flex-wrap: wrap;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .header-inner {
+      width: var(--container);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+      padding: 0.9rem 0;
+    }
+
+    .brand {
+      text-decoration: none;
+      color: var(--navy-950);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(145deg, var(--navy-950), #1d2940);
+      color: var(--gold);
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
+      place-items: center;
+      font-size: 1.2rem;
+      font-weight: 800;
+      border: 1px solid rgba(255, 255, 255, 0.15);
     }
-    .gallery-row-center {
-      grid-template-columns: repeat(4, 1fr);
+
+    .brand-name {
+      margin: 0;
+      line-height: 1.1;
+      font-size: 1.08rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
     }
-    .gallery-card {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.07);
+
+    .brand-sub {
+      color: var(--slate-600);
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.3rem;
+      margin: 0;
+      padding: 0;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--slate-700);
+      font-weight: 500;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: var(--navy-950);
+    }
+
+    .header-cta {
+      text-decoration: none;
+      background: var(--navy-900);
+      color: var(--white);
+      border: 1px solid var(--navy-900);
+      border-radius: 999px;
+      padding: 0.62rem 1rem;
+      font-size: 0.87rem;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .header-cta:hover,
+    .header-cta:focus-visible { background: #1d2940; }
+
+    .menu-btn {
+      display: none;
+      border: 1px solid var(--line);
+      background: var(--white);
+      border-radius: 8px;
+      width: 42px;
+      height: 42px;
+      font-size: 1.1rem;
+      color: var(--navy-900);
+    }
+
+    .hero {
+      background: radial-gradient(circle at 80% 0%, rgba(200, 164, 107, 0.2), transparent 48%),
+        linear-gradient(120deg, var(--navy-950), var(--navy-900));
+      color: var(--white);
+      padding: 5rem 0 4.8rem;
+    }
+
+    .hero-inner {
+      width: var(--container);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 2.2rem;
+      align-items: stretch;
+    }
+
+    .eyebrow {
+      color: #d2b582;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 0.75rem;
+      margin: 0 0 0.9rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4.5vw, 3.35rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      max-width: 16ch;
+    }
+
+    .hero p {
+      max-width: 58ch;
+      color: #d7e2f1;
+      margin: 1.2rem 0 1.6rem;
+      font-size: 1.02rem;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.35rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.72rem 1.15rem;
+      font-size: 0.92rem;
+      transition: 0.2s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary { background: var(--gold); color: var(--navy-950); }
+    .btn-primary:hover,
+    .btn-primary:focus-visible { background: #d8b57c; }
+
+    .btn-secondary {
+      border-color: rgba(255, 255, 255, 0.38);
+      color: #e8eef7;
+      background: transparent;
+    }
+
+    .btn-secondary:hover,
+    .btn-secondary:focus-visible { border-color: var(--gold); color: var(--white); }
+
+    .hero-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .hero-points li {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 999px;
+      padding: 0.35rem 0.7rem;
+      font-size: 0.8rem;
+      color: #deebfa;
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: var(--radius-lg);
+      padding: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card img {
+      border-radius: 12px;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+    }
+
+    .hero-card h2 {
+      margin: 0;
+      font-size: 1.08rem;
+      line-height: 1.3;
+      color: #f2f6fc;
+    }
+
+    .hero-card p { margin: 0; color: #d6e2f3; font-size: 0.93rem; }
+
+    main section { padding: 4.4rem 0; }
+
+    .container {
+      width: var(--container);
+      margin: 0 auto;
+    }
+
+    .section-title {
+      margin: 0;
+      font-size: clamp(1.55rem, 3vw, 2.25rem);
+      line-height: 1.18;
+      letter-spacing: -0.02em;
+      color: var(--navy-950);
+    }
+
+    .section-lead {
+      margin-top: 0.8rem;
+      max-width: 64ch;
+      color: var(--slate-600);
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.6rem;
+    }
+
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      background: var(--white);
+      padding: 1.2rem;
+      box-shadow: 0 2px 10px rgba(15, 23, 42, 0.03);
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 1.05rem;
+      color: var(--navy-900);
+    }
+
+    .card p {
+      margin: 0.6rem 0 0;
+      color: var(--slate-600);
+      font-size: 0.94rem;
+    }
+
+    .process {
+      background: var(--slate-100);
+      border-block: 1px solid var(--line);
+    }
+
+    .process ol {
+      list-style: none;
+      margin: 1.6rem 0 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.9rem;
+    }
+
+    .process li {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 1rem;
+    }
+
+    .step {
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold-strong);
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+      display: block;
+    }
+
+    .gallery {
+      display: grid;
+      gap: 0.9rem;
+      margin-top: 1.6rem;
+      grid-template-columns: 1.2fr 1fr 1fr;
+    }
+
+    .gallery figure {
+      margin: 0;
+      border-radius: var(--radius-md);
       overflow: hidden;
-      transition: border-color 0.3s, transform 0.3s;
+      border: 1px solid var(--line);
+      background: var(--white);
     }
-    .gallery-card:hover {
-      border-color: var(--gold);
-      transform: translateY(-3px);
+
+    .gallery img {
+      width: 100%;
+      height: 100%;
+      min-height: 210px;
+      object-fit: cover;
     }
-    .gallery-card img {
-      width: 100%; height: 220px; object-fit: cover;
-      display: block; transition: transform 0.4s;
+
+    .gallery figcaption {
+      padding: 0.7rem 0.9rem;
+      font-size: 0.86rem;
+      color: var(--slate-700);
+      border-top: 1px solid var(--line);
     }
-    .gallery-card:hover img { transform: scale(1.04); }
-    .gallery-card-caption {
-      padding: 14px 16px;
-      display: flex; flex-direction: column; gap: 4px;
+
+    .faq {
+      border-top: 1px solid var(--line);
+      margin-top: 1.4rem;
     }
-    .gallery-card-caption strong {
-      font-size: 13px; font-weight: 600; color: var(--cream);
+
+    details {
+      border-bottom: 1px solid var(--line);
+      padding: 0.95rem 0;
     }
-    .gallery-card-caption span {
-      font-size: 11px; color: rgba(247,243,236,0.45);
-      letter-spacing: 0.03em;
+
+    summary {
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--navy-900);
+    }
+
+    details p {
+      margin: 0.6rem 0 0;
+      color: var(--slate-600);
+    }
+
+    .contact {
+      background: var(--navy-900);
+      color: #e6eef7;
+      border-top: 1px solid #1f2a40;
+    }
+
+    .contact .section-title { color: var(--white); }
+
+    .contact-wrap {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 1rem;
+      align-items: stretch;
+      margin-top: 1.5rem;
+    }
+
+    .contact-card {
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.04);
+      padding: 1.2rem;
+    }
+
+    .contact-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .contact-list strong {
+      display: block;
+      font-size: 0.74rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #c7d4e7;
+      margin-bottom: 0.2rem;
+    }
+
+    .contact-list a,
+    .contact-list span { color: #f6fbff; text-decoration: none; }
+
+    .contact-side p { margin-top: 0; color: #d4e1f1; }
+
+    footer {
+      background: var(--navy-950);
+      color: #c5d2e3;
+      border-top: 1px solid #1f2a40;
+    }
+
+    .footer-inner {
+      width: var(--container);
+      margin: 0 auto;
+      padding: 1rem 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
     }
 
     @media (max-width: 1024px) {
-      .gallery-row { grid-template-columns: repeat(2, 1fr); }
-      .gallery-row-center { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 600px) {
-      .gallery-row { grid-template-columns: 1fr; }
-      .gallery-row-center { grid-template-columns: 1fr; }
-      .gallery-section { padding: 60px 20px; }
+      .grid-4,
+      .process ol { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+      .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .contact-wrap,
+      .hero-inner { grid-template-columns: 1fr; }
     }
 
-    /* RESPONSIVE */
-    @media (max-width: 900px) {
-      nav { padding: 14px 20px; }
-      .nav-links { display: none; }
-      .aq-mob-toggle { display: flex; }
-      .lang-bar { padding: 8px 20px; }
-      .hero { grid-template-columns: 1fr; padding: 60px 20px 40px; min-height: auto; }
-      .hero-visual { display: none; }
-      .animals-grid { grid-template-columns: 1fr; }
-      .transport-grid { grid-template-columns: 1fr; }
-      .why-inner { grid-template-columns: 1fr; }
-      .contact-inner { grid-template-columns: 1fr; }
-      .form-row { grid-template-columns: 1fr; }
-      .animals-section, .transport-section, .why-section, .contact-section { padding: 60px 20px; }
-      footer { padding: 36px 20px; flex-direction: column; align-items: flex-start; }
+    @media (max-width: 760px) {
+      .menu-btn { display: inline-grid; place-items: center; }
+
+      .site-nav {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        background: var(--white);
+        border-bottom: 1px solid var(--line);
+        padding: 0.6rem 4vw 1rem;
+        display: none;
+      }
+
+      .site-nav.open { display: block; }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-bottom: 0.9rem;
+      }
+
+      .header-cta { display: inline-flex; }
+
+      .grid-4,
+      .grid-3,
+      .gallery,
+      .process ol { grid-template-columns: 1fr; }
+
+      .hero { padding-top: 3.6rem; }
+      .topbar-inner { font-size: 0.8rem; }
     }
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<!-- WhatsApp Float -->
-<!-- WhatsApp Float — numara gizli -->
-<a href="https://wa.me/37127700121" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
-  <span class="wa-icon">💬</span>
-  <span class="wa-tooltip" data-en="Chat on WhatsApp" data-ar="تواصل عبر واتساب" data-ku="واتساپمان بکە">Chat on WhatsApp</span>
-</a>
-
-<!-- Language Bar -->
-<div class="lang-bar">
-  <button class="lang-btn active" onclick="setLang('en')">EN</button>
-  <button class="lang-btn" onclick="setLang('ar')">العربية</button>
-  <button class="lang-btn" onclick="setLang('ku')">کوردی</button>
-</div>
-
-<!-- Nav -->
-<nav>
-  <a href="#" class="nav-logo">
-    <div class="logo-mark">🐄</div>
-    <div>
-      <div class="logo-name">Karo Livestock</div>
-      <div class="logo-sub" data-en="Europe → Middle East" data-ar="أوروبا → الشرق الأوسط" data-ku="ئەوروپا → ڕۆژهەڵاتی ناوەڕاست">Europe → Middle East</div>
-    </div>
-  </a>
-  <ul class="nav-links">
-    <li><a href="#animals" data-en="Animals" data-ar="الحيوانات" data-ku="حەیوانەکان">Animals</a></li>
-    <li><a href="#transport" data-en="Transport" data-ar="النقل" data-ku="گواستنەوە">Transport</a></li>
-    <li><a href="#why" data-en="Why Us" data-ar="لماذا نحن" data-ku="بۆچی ئێمە">Why Us</a></li>
-    <li><a href="#contact" data-en="Contact" data-ar="اتصل بنا" data-ku="پەیوەندی">Contact</a></li>
-  </ul>
-  <a href="#contact" class="nav-cta" data-en="Get a Quote" data-ar="احصل على عرض سعر" data-ku="نرخ وەربگرە">Get a Quote</a>
-  <button class="aq-mob-toggle" aria-label="Menu">☰</button>
-</nav>
-
-<!-- Hero -->
-<section class="hero">
-  <div class="hero-content">
-    <p class="hero-eyebrow" data-en="All of Europe → Iraq & Middle East" data-ar="كل أوروبا → العراق والشرق الأوسط" data-ku="هەموو ئەوروپا → عێراق و ڕۆژهەڵاتی ناوەڕاست">All of Europe → Iraq & Middle East</p>
-    <h1 class="hero-title" data-en="Premium Cattle & Sheep,<br/><em>All Breeds.</em><br/>All Routes." data-ar="أبقار وأغنام فاخرة،<br/><em>جميع السلالات.</em><br/>جميع المسارات." data-ku="گاو و مەڕی باڵا،<br/><em>هەموو جۆرەکان.</em><br/>هەموو ڕێگاکان.">Premium Cattle & Sheep,<br/><em>All Breeds.</em><br/>All Routes.</h1>
-    <p class="hero-desc"
-      data-en="We source and export live cattle and sheep from all across Europe — any breed, any quantity. Delivered to Iraq, Kurdistan and the wider Middle East by truck, ship or air freight."
-      data-ar="نُوفّر ونُصدّر الأبقار والأغنام الحية من جميع أنحاء أوروبا — أي سلالة، أي كمية. تُسلَّم إلى العراق وكردستان وسائر دول الشرق الأوسط براً أو بحراً أو جواً."
-      data-ku="ئێمە گاو و مەڕی زیندووی لە هەموو ئەوروپا دابین دەکەین و دەینێرین — هەر جۆرێک، هەر دانێک. گەیەندراوە بۆ عێراق، کوردستان و ڕۆژهەڵاتی ناوەڕاست بە تریلەر، کەشتی یان فڕۆکە.">
-      We source and export live cattle and sheep from all across Europe — any breed, any quantity. Delivered to Iraq, Kurdistan and the wider Middle East by truck, ship or air freight.
-    </p>
-    <div class="hero-actions">
-      <a href="#contact" class="btn-primary" data-en="📋 Request a Quote" data-ar="📋 طلب عرض سعر" data-ku="📋 داواکاری نرخ">📋 Request a Quote</a>
-      <a href="https://wa.me/37127700121" class="btn-outline" target="_blank" data-en="💬 WhatsApp" data-ar="💬 واتساب" data-ku="💬 واتساپ">💬 WhatsApp</a>
-    </div>
-    <div class="transport-badges">
-      <div class="t-badge"><span>🚛</span> <span data-en="Truck" data-ar="شاحنة" data-ku="تریلەر">Truck</span></div>
-      <div class="t-badge"><span>🚢</span> <span data-en="Livestock Vessel" data-ar="سفينة مواشٍ" data-ku="کەشتیی مەڕوماڵات">Livestock Vessel</span></div>
-      <div class="t-badge"><span>✈️</span> <span data-en="Air Freight" data-ar="شحن جوي" data-ku="بار هەوایی">Air Freight</span></div>
+  <div class="topbar" aria-label="Site information">
+    <div class="topbar-inner">
+      <span>Latvia (EU) livestock export partner</span>
+      <span>Serving Iraq, Kurdistan and the Middle East</span>
     </div>
   </div>
 
-  <div class="hero-visual" aria-hidden="true">
-    <div class="route-box">
-      <p class="route-title" data-en="Active export routes" data-ar="مسارات التصدير النشطة" data-ku="ڕێگاکانی هەناردەکردنی چالاک">Active export routes</p>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#home" class="brand" aria-label="Karo Livestock home">
+        <span class="brand-mark" aria-hidden="true">KL</span>
+        <span>
+          <strong class="brand-name">Karo Livestock</strong>
+          <span class="brand-sub">Premium Corporate Export</span>
+        </span>
+      </a>
 
-      <div class="route-line">
-        <div class="route-node origin">🇪🇺 Europe</div>
-        <span class="route-arrow">→</span>
-        <div class="route-node dest">🇮🇶 Iraq</div>
-      </div>
-      <div class="route-line">
-        <div class="route-node origin">🇪🇺 Europe</div>
-        <span class="route-arrow">→</span>
-        <div class="route-node dest">🌍 Gulf States</div>
-      </div>
-      <div class="route-line">
-        <div class="route-node origin">🇪🇺 Europe</div>
-        <span class="route-arrow">→</span>
-        <div class="route-node dest">Kurdistan 🏔️</div>
-      </div>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle menu">☰</button>
 
-      <hr class="route-divider">
-
-      <div class="route-stat">
-        <span class="route-stat-label" data-en="Source Countries" data-ar="دول المصدر" data-ku="وڵاتە سەرچاوەکان">Source Countries</span>
-        <span class="route-stat-val" data-en="All EU + Balkans" data-ar="كل الاتحاد الأوروبي + البلقان" data-ku="هەموو ئەوروپا + باڵکان">All EU + Balkans</span>
-      </div>
-      <div class="route-stat">
-        <span class="route-stat-label" data-en="Transport" data-ar="النقل" data-ku="گواستنەوە">Transport</span>
-        <span class="route-stat-val" data-en="Truck / Livestock Vessel / Air" data-ar="شاحنة / سفينة مواشٍ / جو" data-ku="تریلەر / کەشتیی مەڕوماڵات / هەوا">Truck / Livestock Vessel / Air</span>
-      </div>
-      <div class="route-stat">
-        <span class="route-stat-label" data-en="Min. Order" data-ar="الحد الأدنى للطلب" data-ku="کەمترین داواکاری">Min. Order</span>
-        <span class="route-stat-val" data-en="Full truckload / container" data-ar="حمولة شاحنة كاملة / حاوية" data-ku="تریلەری تەواو / کونتێینەر">Full truckload / container</span>
-      </div>
-      <div class="route-stat">
-        <span class="route-stat-label" data-en="Certification" data-ar="الشهادات" data-ku="گواهینامە">Certification</span>
-        <span class="route-stat-val" data-en="EU Vet. Certified" data-ar="معتمد بيطرياً أوروبياً" data-ku="گواهی پزیشکی ئەوروپا">EU Vet. Certified</span>
-      </div>
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#quality">Quality</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="header-cta" href="https://wa.me/37127700121" target="_blank" rel="noopener">WhatsApp Quote</a>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
 
-<!-- Animals -->
-<section id="animals" class="animals-section">
-  <p class="section-eyebrow" data-en="What We Export" data-ar="ما نصدّره" data-ku="چی ئەناردین">What We Export</p>
-  <h2 class="section-title" data-en="<em>Cattle</em> & Sheep — All Breeds" data-ar="<em>أبقار</em> وأغنام — جميع السلالات" data-ku="<em>گاو</em> و مەڕ — هەموو جۆرەکان"><em>Cattle</em> & Sheep — All Breeds</h2>
-  <div class="animals-grid">
-
-    <div class="animal-card">
-      <span class="animal-icon">🐄</span>
-      <h3 class="animal-name" data-en="Live Cattle" data-ar="أبقار حية" data-ku="گاوی زیندوو">Live Cattle</h3>
-      <p class="animal-desc"
-        data-en="All European cattle breeds available — Holstein, Simmental, Limousin, Charolais, Hereford, Aberdeen Angus and more. Sourced from farms across the entire EU and Balkans. Bulk quantities, competitive pricing."
-        data-ar="جميع سلالات الأبقار الأوروبية متاحة — هولشتاين وسيمنتال وليموزين وشارولي وهيريفورد وأنغوس أبردين وغيرها. مصدرها مزارع في جميع أنحاء الاتحاد الأوروبي والبلقان. كميات كبيرة وأسعار تنافسية."
-        data-ku="هەموو جۆرەکانی گاوی ئەوروپی بەردەستن — هۆلستاین، سیمەنتاڵ، لیموزین، شارۆلە، هیریفۆرد، ئابەردین ئانگوس و زیاتر. لە جووتیارییەکانی هەموو ئەوروپا و باڵکان دابینکراون. دانی زۆر، نرخی کێبڕکێکار.">
-        All European cattle breeds available — Holstein, Simmental, Limousin, Charolais, Hereford, Aberdeen Angus and more. Sourced from farms across the entire EU and Balkans. Bulk quantities, competitive pricing.
-      </p>
-      <div class="animal-tags">
-        <span class="animal-tag" data-en="All Breeds" data-ar="جميع السلالات" data-ku="هەموو جۆرەکان">All Breeds</span>
-        <span class="animal-tag" data-en="EU Certified" data-ar="معتمد أوروبياً" data-ku="مۆڵەتی ئەوروپا">EU Certified</span>
-        <span class="animal-tag" data-en="Bulk Orders" data-ar="طلبات كبيرة" data-ku="داواکاری کۆ">Bulk Orders</span>
-      </div>
-    </div>
-
-    <div class="animal-card">
-      <span class="animal-icon">🐑</span>
-      <h3 class="animal-name" data-en="Sheep & Lambs" data-ar="أغنام وحملان" data-ku="مەڕ و برە">Sheep & Lambs</h3>
-      <p class="animal-desc"
-        data-en="Merino, Texel, Dorper, Suffolk, Lacaune and all major European sheep breeds. Young lambs and mature sheep available year-round. Perfect for Eid season — large quantities accommodated."
-        data-ar="مرينو وتكسل ودوربر وسوفولك ولاكون وجميع سلالات الأغنام الأوروبية الرئيسية. حملان صغيرة وأغنام ناضجة متاحة على مدار العام. مثالية لموسم عيد الأضحى — نستوعب الكميات الكبيرة."
-        data-ku="مەرینۆ، تێکسەڵ، دۆرپەر، سافۆڵک، لاکون و هەموو جۆرە سەرەکییەکانی مەڕی ئەوروپی. برەی بچووک و مەڕی گەورە بە تەواوی ساڵ بەردەستن. گونجاوی کاتی جەژنی قوربان — دانی زۆر وەردەگیرێت.">
-        Merino, Texel, Dorper, Suffolk, Lacaune and all major European sheep breeds. Young lambs and mature sheep available year-round. Perfect for Eid season — large quantities accommodated.
-      </p>
-      <div class="animal-tags">
-        <span class="animal-tag" data-en="All Breeds" data-ar="جميع السلالات" data-ku="هەموو جۆرەکان">All Breeds</span>
-        <span class="animal-tag" data-en="Halal Ready" data-ar="جاهز للحلال" data-ku="ئامادەی حەڵاڵ">Halal Ready</span>
-        <span class="animal-tag" data-en="Year-Round" data-ar="طوال العام" data-ku="تەواوی ساڵ">Year-Round</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- GALLERY -->
-<section class="gallery-section">
-  <p class="section-eyebrow" data-en="Our Animals & Products" data-ar="حيواناتنا ومنتجاتنا" data-ku="حەیوان و بەرهەمەکانمان">Our Animals & Products</p>
-  <h2 class="section-title" data-en="Real Farms. Real Animals. <em>Real Quality.</em>" data-ar="مزارع حقيقية. حيوانات حقيقية. <em>جودة حقيقية.</em>" data-ku="جووتیارییەکی ڕاستەقینە. حەیوانی ڕاستەقینە. <em>کوالیتەی ڕاستەقینە.</em>">Real Farms. Real Animals. <em>Real Quality.</em></h2>
-
-  <!-- CATEGORY 1: CATTLE -->
-  <div class="gallery-category">
-    <div class="gallery-cat-label">
-      <span class="cat-icon">🐄</span>
-      <span class="cat-title" data-en="Cattle" data-ar="الأبقار" data-ku="گاو">Cattle</span>
-    </div>
-    <div class="gallery-row">
-      <div class="gallery-card">
-        <img src="https://raw.githubusercontent.com/Aquamiato/karolivestock.com/main/images/holstein-barn-row-latvia-farm.jpg"
-             alt="Holstein cattle feeding in row — large scale EU certified barn Latvia"
-             loading="lazy" />
-        <div class="gallery-card-caption">
-          <strong data-en="Holstein — Latvia Farm" data-ar="هولشتاين — مزرعة لاتفيا" data-ku="هۆلستاین — جووتیارییەکی لاتڤیا">Holstein — Latvia Farm</strong>
-          <span data-en="Large-scale EU certified barn" data-ar="حظيرة أوروبية معتمدة واسعة" data-ku="ئەستووری گەورەی مۆڵەتداری ئەوروپی">Large-scale EU certified barn</span>
-        </div>
-      </div>
-      <div class="gallery-card">
-        <img src="https://raw.githubusercontent.com/Aquamiato/karolivestock.com/main/images/cattle-barn-inspection-latvia.jpg"
-             alt="Buyer inspecting Holstein cattle in European barn — farm visit Latvia"
-             loading="lazy" />
-        <div class="gallery-card-caption">
-          <strong data-en="Farm Inspection Visit" data-ar="زيارة تفتيش المزرعة" data-ku="سەردانی پشکنینی جووتیاری">Farm Inspection Visit</strong>
-          <span data-en="Buyers welcome to visit & select" data-ar="المشترون مرحب بهم للزيارة والاختيار" data-ku="کڕیارەکان بەخێربێن بۆ سەردان و هەڵبژاردن">Buyers welcome to visit & select</span>
-        </div>
-      </div>
-      <div class="gallery-card">
-        <img src="https://raw.githubusercontent.com/Aquamiato/karolivestock.com/main/images/holstein-calves-close-up-eu-tags.jpg"
-             alt="Holstein calves close-up with EU yellow ear tags — Latvia"
-             loading="lazy" />
-        <div class="gallery-card-caption">
-          <strong data-en="EU Tagged Calves" data-ar="عجول بعلامات أوروبية" data-ku="بوکەی گوێبەستی ئەوروپی">EU Tagged Calves</strong>
-          <span data-en="Full traceability — individual EU tags" data-ar="تتبع كامل — علامات أوروبية فردية" data-ku="شوێنپێکردنی تەواو — گوێبەستی تایبەت">Full traceability — individual EU tags</span>
-        </div>
-      </div>
-      <div class="gallery-card">
-        <img src="https://raw.githubusercontent.com/Aquamiato/karolivestock.com/main/images/holstein-cattle-feeding-hay-barn.jpg"
-             alt="Holstein cattle feeding on hay in European barn — EU ear tagged export ready"
-             loading="lazy" />
-        <div class="gallery-card-caption">
-          <strong data-en="Healthy, Well-Fed Cattle" data-ar="أبقار صحية وجيدة التغذية" data-ku="گاوی تەندروست و باش خواردنکراو">Healthy, Well-Fed Cattle</strong>
-          <span data-en="Regular vet checks, EU health certs" data-ar="فحوصات بيطرية منتظمة وشهادات صحية أوروبية" data-ku="چاودێریی پزیشکی بە رێکوپێک، گواهینامەی تەندروستیی ئەوروپی">Regular vet checks, EU health certs</span>
-        </div>
-      </div>
-      <div class="gallery-card">
-        <img src="https://raw.githubusercontent.com/Aquamiato/karolivestock.com/main/images/cattle-herd-green-meadow-latvia.jpg"
-             alt="Cattle herd resting on green meadow Latvia — summer pasture"
-             loading="lazy" />
-        <div class="gallery-card-caption">
-          <strong data-en="Summer Pastures — Latvia" data-ar="مراعي الصيف — لاتفيا" data-ku="مەرعی هاوین — لاتڤیا">Summer Pastures — Latvia</strong>
-          <span data-en="Natural grazing on Latvian meadows" data-ar="رعي طبيعي في المراعي اللاتفية" data-ku="چەرینی سروشتی لە مەرعەکانی لاتڤیا">Natural grazing on Latvian meadows</span>
-        </div>
-      </div>
-      <div class="gallery-card">
-        <img src="https://raw.githubusercontent.com/Aquamiato/karolivestock.com/main/images/holstein-dairy-barn-modern-latvia.jpg"
-             alt="Modern Holstein dairy barn Latvia — large scale EU certified cattle facility"
-             loading="lazy" />
-        <div class="gallery-card-caption">
-          <strong data-en="Modern Cattle Facility" data-ar="منشأة أبقار حديثة" data-ku="کارگەی گاوی مۆدێرن">Modern Cattle Facility</strong>
-          <span data-en="Hundreds of animals — ready for export" data-ar="مئات الحيوانات — جاهزة للتصدير" data-ku="سەدان حەیوان — ئامادەی هەناردەکردن">Hundreds of animals — ready for export</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CATEGORY 2: SHEEP -->
-  <div class="gallery-category">
-    <div class="gallery-cat-label">
-      <span class="cat-icon">🐑</span>
-      <span class="cat-title" data-en="Sheep & Lambs" data-ar="الأغنام والحملان" data-ku="مەڕ و برە">Sheep & Lambs</span>
-    </div>
-    <div class="gallery-row">
-      <div class="gallery-card">
-        <img src="https://raw.githubusercontent.com/Aquamiato/karolivestock.com/main/images/sheep-farm-straw-barn-latvia.jpg"
-             alt="Sheep in straw barn European farm — EU ear tagged ready for export"
-             loading="lazy" />
-        <div class="gallery-card-caption">
-          <strong data-en="Sheep Farm — Europe" data-ar="مزرعة أغنام — أوروبا" data-ku="جووتیارییەکی مەڕ — ئەوروپا">Sheep Farm — Europe</strong>
-          <span data-en="EU ear-tagged, certified, export-ready" data-ar="بعلامات أوروبية ومعتمدة وجاهزة للتصدير" data-ku="گوێبەستی ئەوروپی، مۆڵەتدار، ئامادەی هەناردەکردن">EU ear-tagged, certified, export-ready</span>
-        </div>
-      </div>
-      <div class="gallery-card">
-        <img src="https://raw.githubusercontent.com/Aquamiato/karolivestock.com/main/images/sheep-flock-barn-eu-tagged.jpg"
-             alt="Flock of EU ear-tagged sheep in European barn — bulk export ready"
-             loading="lazy" />
-        <div class="gallery-card-caption">
-          <strong data-en="EU Tagged Flock" data-ar="قطيع بعلامات أوروبية" data-ku="کۆمەڵەی گوێبەستی ئەوروپی">EU Tagged Flock</strong>
-          <span data-en="All animals individually tagged per EU law" data-ar="جميع الحيوانات بعلامات فردية وفق القانون الأوروبي" data-ku="هەموو حەیواناکان بەپێی یاسای ئەوروپی بە جیاجیا گوێبەست کراون">All animals individually tagged per EU law</span>
-        </div>
-      </div>
-      <div class="gallery-card">
-        <img src="https://raw.githubusercontent.com/Aquamiato/karolivestock.com/main/images/sheep-lambs-indoor-farm.jpg"
-             alt="Sheep and lambs with yellow EU ear tags indoor farm — Middle East export"
-             loading="lazy" />
-        <div class="gallery-card-caption">
-          <strong data-en="Sheep & Lambs — Year Round" data-ar="أغنام وحملان — طوال العام" data-ku="مەڕ و برە — بە تەواوی ساڵ">Sheep & Lambs — Year Round</strong>
-          <span data-en="All breeds, any quantity" data-ar="جميع السلالات، أي كمية" data-ku="هەموو جۆرەکان، هەر دانێک">All breeds, any quantity</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CATEGORY 3: HALAL MEAT -->
-  <div class="gallery-category">
-    <div class="gallery-cat-label">
-      <span class="cat-icon">🥩</span>
-      <span class="cat-title" data-en="Halal Meat" data-ar="اللحوم الحلال" data-ku="گۆشتی حەڵاڵ">Halal Meat</span>
-    </div>
-    <div class="gallery-row gallery-row-center">
-      <div class="gallery-card">
-        <img src="https://raw.githubusercontent.com/Aquamiato/karolivestock.com/main/images/halal-beef-shoulder-vacuum-packed.jpg"
-             alt="Halal certified beef shoulder vacuum packed — EU standard Latvia cold chain"
-             loading="lazy" />
-        <div class="gallery-card-caption">
-          <strong data-en="Beef Shoulder — Halal" data-ar="كتف البقر — حلال" data-ku="ئەمووی گاو — حەڵاڵ">Beef Shoulder — Halal</strong>
-          <span data-en="Vacuum packed, EU certified, cold chain" data-ar="معبأ بالتفريغ، معتمد أوروبياً، سلسلة تبريد" data-ku="بەستراو بە خالی هەوا، مۆڵەتی ئەوروپا، زنجیرەی ساردکردن">Vacuum packed, EU certified, cold chain</span>
-        </div>
-      </div>
-      <div class="gallery-card">
-        <img src="https://raw.githubusercontent.com/Aquamiato/karolivestock.com/main/images/beef-carcass-latvia-eu-certified.jpg"
-             alt="EU certified beef carcass Latvia slaughterhouse — LV origin traceability tag 06236281"
-             loading="lazy" />
-        <div class="gallery-card-caption">
-          <strong data-en="EU Certified Carcass — LV" data-ar="كركاس أوروبي معتمد — LV" data-ku="کارکاسی مۆڵەتداری ئەوروپی — LV">EU Certified Carcass — LV</strong>
-          <span data-en="Official EU traceability tag — LV origin" data-ar="علامة تتبع أوروبية رسمية — منشأ لاتفيا" data-ku="لایەبرێکی شوێنپێکردنی فەرمیی ئەوروپی — بنەماڵەی LV">Official EU traceability tag — LV origin</span>
-        </div>
-      </div>
-      <div class="gallery-card">
-        <img src="https://raw.githubusercontent.com/Aquamiato/karolivestock.com/main/images/halal-beef-cuts-packaged.jpg"
-             alt="Halal beef cuts vacuum packed brisket shoulder various cuts EU certified"
-             loading="lazy" />
-        <div class="gallery-card-caption">
-          <strong data-en="Various Beef Cuts — Halal" data-ar="قطع لحم بقري متنوعة — حلال" data-ku="بڕگەی جۆراوجۆری گۆشتی گاو — حەڵاڵ">Various Beef Cuts — Halal</strong>
-          <span data-en="Brisket, shoulder, ribs and more" data-ar="صدر وكتف وضلوع وأكثر" data-ku="بریسکێت، ئەموو، ئێسکی پاڵ و زیاتر">Brisket, shoulder, ribs and more</span>
-        </div>
-      </div>
-      <div class="gallery-card">
-        <img src="https://raw.githubusercontent.com/Aquamiato/karolivestock.com/main/images/nimet-halal-beef-latvia.jpg"
-             alt="Nimet Halal beef shoulder produced slaughtered packed in Latvia EU certified"
-             loading="lazy" />
-        <div class="gallery-card-caption">
-          <strong data-en="Nimet Halal — Latvia" data-ar="نيمت حلال — لاتفيا" data-ku="نیمەت حەڵاڵ — لاتڤیا">Nimet Halal — Latvia</strong>
-          <span data-en="Produced, slaughtered & packed in Latvia" data-ar="منتج وذبيح ومعبأ في لاتفيا" data-ku="بەرهەمهێنراو، سەرکراو و پاکەتکراو لە لاتڤیا">Produced, slaughtered & packed in Latvia</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</section>
-
-<!-- Transport -->
-<section id="transport" class="transport-section">
-  <p class="section-eyebrow" data-en="How We Deliver" data-ar="كيف نُسلّم" data-ku="چۆن دەگەینین">How We Deliver</p>
-  <h2 class="section-title" data-en="Truck. Ship. <em>Air.</em>" data-ar="شاحنة. سفينة. <em>جو.</em>" data-ku="تریلەر. کەشتی. <em>هەوا.</em>">Truck. Ship. <em>Air.</em></h2>
-  <div class="transport-grid">
-
-    <div class="transport-card">
-      <span class="transport-icon">🚛</span>
-      <h3 class="transport-name" data-en="Truck (TIR)" data-ar="شاحنة (TIR)" data-ku="تریلەر (TIR)">Truck (TIR)</h3>
-      <p class="transport-desc"
-        data-en="Full TIR truckloads direct from European farms. Livestock transport vehicles certified to EU animal welfare standards. Door-to-border delivery with all customs paperwork handled."
-        data-ar="حمولات شاحنات TIR كاملة مباشرة من المزارع الأوروبية. مركبات نقل الماشية معتمدة وفق معايير رعاية الحيوان الأوروبية. توصيل حتى الحدود مع إدارة كافة أوراق الجمارك."
-        data-ku="تریلەری تەواوی TIR ڕاستەوخۆ لە جووتیارییەکانی ئەوروپا. ئوتومبێلی گواستنەوەی مەڕوماڵات گواهینامەی ستانداردی چاودێریی حەیوانی ئەوروپاییانی هەیە. گەیاندن بۆ سنووری گومرگ لەگەڵ بەڕێوەبردنی هەموو کاغەزەکانی گومرگ.">
-        Full TIR truckloads direct from European farms. Livestock transport vehicles certified to EU animal welfare standards. Door-to-border delivery with all customs paperwork handled.
-      </p>
-      <p class="transport-detail" data-en="Capacity: 200–300 sheep / 40–60 cattle per truck" data-ar="الطاقة: 200–300 خروف / 40–60 رأس ماشية لكل شاحنة" data-ku="ئەندازە: 200-300 مەڕ / 40-60 گاو بۆ هەر تریلەرێک">Capacity: 200–300 sheep / 40–60 cattle per truck</p>
-    </div>
-
-    <div class="transport-card">
-      <span class="transport-icon">🚢</span>
-      <h3 class="transport-name" data-en="Livestock Vessel" data-ar="سفينة نقل المواشي" data-ku="کەشتیی مەڕوماڵات">Livestock Vessel</h3>
-      <p class="transport-desc"
-        data-en="Dedicated livestock carrier vessels — purpose-built ships designed specifically for transporting live animals by sea. From European ports to Gulf and Middle Eastern ports. Most cost-effective for large volumes."
-        data-ar="سفن نقل مواشٍ متخصصة — سفن مصممة خصيصاً لنقل الحيوانات الحية عبر البحر. من الموانئ الأوروبية إلى موانئ الخليج والشرق الأوسط. الأكثر فعالية من حيث التكلفة للكميات الكبيرة."
-        data-ku="کەشتییە تایبەتەکانی گواستنەوەی مەڕوماڵات — کەشتییە تایبەتە دروستکراوەکان بۆ گواستنەوەی حەیوانی زیندوو بە دەریا. لە بەندەرەکانی ئەوروپا بۆ بەندەرەکانی خەلیج و ڕۆژهەڵاتی ناوەڕاست. کارآمەدترین بۆ دانی زۆر.">
-        Large-scale livestock shipments via sea freight. Standard and livestock container vessels from European ports to Gulf and Middle Eastern ports. Most cost-effective for large volumes.
-      </p>
-      <p class="transport-detail" data-en="Best for: 500+ animals, large bulk shipments" data-ar="الأفضل لـ: 500+ رأس، الشحنات الكبيرة" data-ku="باشترین بۆ: 500+ حەیوان، ناردنی کۆی گەورە">Best for: 500+ animals, large bulk shipments</p>
-    </div>
-
-    <div class="transport-card">
-      <span class="transport-icon">✈️</span>
-      <h3 class="transport-name" data-en="Air Freight" data-ar="الشحن الجوي" data-ku="بار هەوایی">Air Freight</h3>
-      <p class="transport-desc"
-        data-en="Fast delivery for urgent or high-value orders. Specially equipped cargo aircraft for live animal transport. Full IATA compliance, veterinary supervision throughout the flight."
-        data-ar="توصيل سريع للطلبات العاجلة أو عالية القيمة. طائرات شحن مجهزة خصيصاً لنقل الحيوانات الحية. امتثال كامل لمعايير IATA وإشراف بيطري طوال الرحلة."
-        data-ku="گەیاندنی خێرا بۆ داواکاریە فریاکەوتووەکان یان بەرزنرخەکان. فڕۆکەی بار بە تایبەتی سازکراو بۆ گواستنەوەی حەیوانی زیندوو. گونجانی تەواو لەگەڵ IATA، سەرپەرشتیی پزیشکی مەڕوماڵات لە هەموو کات فڕینەکەدا.">
-        Fast delivery for urgent or high-value orders. Specially equipped cargo aircraft for live animal transport. Full IATA compliance, veterinary supervision throughout the flight.
-      </p>
-      <p class="transport-detail" data-en="Best for: urgent, premium or small batches" data-ar="الأفضل لـ: الطلبات العاجلة أو الراقية أو الصغيرة" data-ku="باشترین بۆ: فریاکەوتوو، باڵا یان گروپی بچووک">Best for: urgent, premium or small batches</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- Why Us -->
-<section id="why" class="why-section">
-  <p class="section-eyebrow" data-en="Why Karo Livestock" data-ar="لماذا كارو للماشية" data-ku="بۆچی کارۆ لایڤستۆک">Why Karo Livestock</p>
-  <h2 class="section-title" data-en="Your Reliable <em>European Partner</em>" data-ar="شريكك الأوروبي <em>الموثوق</em>" data-ku="هاوبەشی ئەوروپیی <em>پشتیوانەکەت</em>">Your Reliable <em>European Partner</em></h2>
-  <div class="why-inner">
-    <ul class="why-list">
-      <li class="why-item">
-        <div class="why-icon">🌍</div>
-        <div class="why-item-text">
-          <h4 data-en="Pan-European Sourcing" data-ar="تأمين من عموم أوروبا" data-ku="دابینکردن لە هەموو ئەوروپا">Pan-European Sourcing</h4>
-          <p data-en="We source livestock from farms across all EU member states and the Balkans — not limited to a single country. This gives us access to all breeds and the best prices." data-ar="نُوفّر الماشية من مزارع في جميع الدول الأعضاء في الاتحاد الأوروبي والبلقان — لسنا مقتصرين على دولة واحدة. هذا يمنحنا الوصول إلى جميع السلالات وأفضل الأسعار." data-ku="ئێمە مەڕوماڵات لە جووتیارییەکانی هەموو وڵاتەکانی ئەندامی ئەوروپا و باڵکان دابین دەکەین — سنوردار نییە بە وڵاتێکی تاک. ئەمەش دەستپێکەوتنی ئێمە دەدات بە هەموو جۆرەکان و باشترین نرخەکان.">We source livestock from farms across all EU member states and the Balkans — not limited to a single country. This gives us access to all breeds and the best prices.</p>
-        </div>
-      </li>
-      <li class="why-item">
-        <div class="why-icon">📋</div>
-        <div class="why-item-text">
-          <h4 data-en="Full Documentation" data-ar="التوثيق الكامل" data-ku="بەڵگەنامەی تەواو">Full Documentation</h4>
-          <p data-en="We handle all export paperwork — EU health certificates, vaccination records, TRACES system registration, import permits and customs clearance for destination countries." data-ar="نتولى جميع أوراق التصدير — شهادات الصحة الأوروبية وسجلات التطعيم وتسجيل نظام TRACES وتصاريح الاستيراد والتخليص الجمركي لدول المقصد." data-ku="ئێمە هەموو کاغەزەکانی هەناردەکردن بەڕێوە دەبەین — گواهینامەی تەندروستیی ئەوروپا، تۆماری واکسین، تۆمارکردنی سیستەمی TRACES، مۆڵەتنامەی هاوردە و دەرچوونی گومرگ بۆ وڵاتەکانی مەودا.">We handle all export paperwork — EU health certificates, vaccination records, TRACES system registration, import permits and customs clearance for destination countries.</p>
-        </div>
-      </li>
-      <li class="why-item">
-        <div class="why-icon">🕌</div>
-        <div class="why-item-text">
-          <h4 data-en="Halal Compliant" data-ar="متوافق مع الحلال" data-ku="گونجاوی حەڵاڵ">Halal Compliant</h4>
-          <p data-en="We work with halal-certified partners and can provide full halal documentation for all livestock and meat products exported to Muslim-majority markets." data-ar="نتعاون مع شركاء معتمدين حلالاً ويمكننا تقديم وثائق حلال كاملة لجميع الماشية ومنتجات اللحوم المُصدَّرة إلى الأسواق ذات الأغلبية المسلمة." data-ku="ئێمە لەگەڵ هاوبەشانی گواهی حەڵاڵدار کاردەکەین و دەتوانین بەڵگەنامەی حەڵاڵی تەواو بۆ هەموو مەڕوماڵات و بەرهەمەکانی گۆشت دابین بکەین کە دەنێردرێن بۆ بازاڕەکانی زۆرینەی موسڵمان.">We work with halal-certified partners and can provide full halal documentation for all livestock and meat products exported to Muslim-majority markets.</p>
-        </div>
-      </li>
-      <li class="why-item">
-        <div class="why-icon">📞</div>
-        <div class="why-item-text">
-          <h4 data-en="Direct Communication" data-ar="التواصل المباشر" data-ku="پەیوەندیی ڕاستەوخۆ">Direct Communication</h4>
-          <p data-en="No intermediaries. You deal directly with us. Fast responses, clear contracts, transparent pricing. Available via WhatsApp, phone or email 7 days a week." data-ar="لا وسطاء. أنت تتعامل معنا مباشرةً. ردود سريعة وعقود واضحة وأسعار شفافة. متاح عبر واتساب أو الهاتف أو البريد الإلكتروني 7 أيام في الأسبوع." data-ku="هیچ ناوەڕاستێک نییە. ڕاستەوخۆ لەگەڵ ئێمە مامەڵە دەکەی. وەڵامی خێرا، گرێبەستی ئاشکرا، نرخی ریکەوتی. بەردەستە بە واتساپ، تەلەفۆن یان ئیمەیل 7 ڕۆژی هەفتە.">No intermediaries. You deal directly with us. Fast responses, clear contracts, transparent pricing. Available via WhatsApp, phone or email 7 days a week.</p>
-        </div>
-      </li>
-    </ul>
-
-    <div class="why-panel">
-      <h3 data-en="We ship to <em>the entire Middle East</em>" data-ar="نشحن إلى <em>جميع دول الشرق الأوسط</em>" data-ku="ئێمە بۆ <em>هەموو ڕۆژهەڵاتی ناوەڕاست</em> دەینێرین">We ship to <em>the entire Middle East</em></h3>
-      <ul class="coverage-list">
-        <li>🇮🇶 Iraq</li>
-        <li>Kurdistan Region 🏔️</li>
-        <li>🇸🇦 Saudi Arabia</li>
-        <li>🇦🇪 United Arab Emirates</li>
-        <li>🇰🇼 Kuwait</li>
-        <li>🇯🇴 Jordan</li>
-        <li>🇱🇧 Lebanon</li>
-        <li>🇶🇦 Qatar</li>
-        <li>🇴🇲 Oman</li>
-        <li data-en="+ Other destinations on request" data-ar="+ وجهات أخرى عند الطلب" data-ku="+ مەودای تر بەپێی داواکاری">+ Other destinations on request</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- Contact -->
-<section id="contact" class="contact-section">
-  <div class="contact-inner">
-    <div class="contact-info">
-      <h2 data-en="Let's Do <em>Business</em>" data-ar="لنبدأ <em>العمل معاً</em>" data-ku="با <em>بازرگانی</em> بکەین">Let's Do <em>Business</em></h2>
-      <p data-en="Ready to import European cattle or sheep? Send us your requirements — breed, quantity, destination — and we'll get back to you with a detailed quote within 24 hours." data-ar="هل أنت مستعد لاستيراد أبقار أو أغنام أوروبية؟ أرسل لنا متطلباتك — السلالة والكمية والوجهة — وسنرد عليك بعرض سعر مفصل خلال 24 ساعة." data-ku="ئامادەی هاوردەکردنی گاو یان مەڕی ئەوروپیی؟ پێداویستییەکانت بنێرە بۆمان — جۆر، دان، مەودا — و لە 24 کاتژمێردا لەگەڵ نرخنامەیەکی ورد وەڵامت دەدەینەوە.">
-        Ready to import European cattle or sheep? Send us your requirements — breed, quantity, destination — and we'll get back to you with a detailed quote within 24 hours.
-      </p>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="contact-icon">💬</div>
-          <div class="contact-item-text">
-            <span data-en="WhatsApp" data-ar="واتساب" data-ku="واتساپ">WhatsApp</span>
-            <a href="https://wa.me/37127700121" data-en="Click to chat on WhatsApp" data-ar="انقر للتواصل عبر واتساب" data-ku="کلیک بکە بۆ قسەکردن لە واتساپ">Click to chat on WhatsApp</a>
+  <main id="main-content">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div>
+          <p class="eyebrow">Premium Corporate Direction</p>
+          <h1 id="hero-title">Structured livestock export from Europe to Middle East buyers</h1>
+          <p>
+            Karo Livestock supplies live cattle, sheep, goats and premium meat from Latvia (EU) to Iraq,
+            Kurdistan and regional markets, supported by truck, ship and air logistics planning.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://wa.me/37127700121" target="_blank" rel="noopener">Get a Quote on WhatsApp</a>
+            <a class="btn btn-secondary" href="#contact">Speak with the team</a>
           </div>
+          <ul class="hero-points" aria-label="Service highlights">
+            <li>Live cattle</li>
+            <li>Sheep &amp; lambs</li>
+            <li>Goats</li>
+            <li>Premium meat</li>
+            <li>Truck / Ship / Air</li>
+          </ul>
         </div>
-        <div class="contact-item">
-          <div class="contact-icon">📧</div>
-          <div class="contact-item-text">
-            <span>Email</span>
-            <a href="#contact" onclick="document.querySelector('.contact-form textarea').focus(); return false;"
-               data-en="Send us a message via the form →" data-ar="أرسل لنا رسالة عبر النموذج ←" data-ku="پەیاممان بنێرە بە فۆرمەکەوە ←">Send us a message via the form →</a>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon">📍</div>
-          <div class="contact-item-text">
-            <span data-en="Based in" data-ar="مقرنا في" data-ku="بنکەمان لە">Based in</span>
-            <a href="#">Riga, Latvia — European Union 🇱🇻</a>
-          </div>
+
+        <article class="hero-card">
+          <img src="/images/holstein-dairy-barn-modern-latvia.jpg" alt="Holstein cattle in a modern Latvian farm barn" width="800" height="500" fetchpriority="high" />
+          <h2>Trust-focused export planning</h2>
+          <p>
+            Clear communication, route selection based on buyer needs, and documentation-led coordination from origin to destination.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="solutions" aria-labelledby="solutions-title">
+      <div class="container">
+        <h2 class="section-title" id="solutions-title">Export solutions built for importers and distributors</h2>
+        <p class="section-lead">
+          We structure supply around product type, destination requirements and preferred delivery mode while keeping commercial communication straightforward.
+        </p>
+        <div class="grid grid-4">
+          <article class="card">
+            <h3>Live Cattle Export</h3>
+            <p>Commercial and breeding-focused cattle supply from Europe according to buyer order profiles.</p>
+          </article>
+          <article class="card">
+            <h3>Sheep &amp; Lamb Supply</h3>
+            <p>Sheep and lamb volumes for wholesale channels in Iraq, Kurdistan and broader Middle East markets.</p>
+          </article>
+          <article class="card">
+            <h3>Goat Export</h3>
+            <p>Goat supply coordinated with destination and handling requirements for international transport lanes.</p>
+          </article>
+          <article class="card">
+            <h3>Premium Meat</h3>
+            <p>Premium meat supply from Latvia with export coordination for market-specific distribution needs.</p>
+          </article>
         </div>
       </div>
+    </section>
+
+    <section class="process" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <h2 class="section-title" id="process-title">A clear and professional process from first contact to delivery</h2>
+        <ol>
+          <li>
+            <span class="step">Step 01</span>
+            Define species, volume and destination requirements.
+          </li>
+          <li>
+            <span class="step">Step 02</span>
+            Align commercial terms and preferred logistics mode.
+          </li>
+          <li>
+            <span class="step">Step 03</span>
+            Coordinate export paperwork and shipment planning.
+          </li>
+          <li>
+            <span class="step">Step 04</span>
+            Maintain communication until handover at destination.
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="quality" aria-labelledby="quality-title">
+      <div class="container">
+        <h2 class="section-title" id="quality-title">Corporate-grade presentation with practical farm visibility</h2>
+        <p class="section-lead">Representative imagery from farm and product operations used in current communications.</p>
+
+        <div class="gallery">
+          <figure>
+            <img src="/images/holstein-barn-row-latvia-farm.jpg" alt="Row of Holstein cattle in a Latvian farm" width="900" height="600" loading="lazy" />
+            <figcaption>Holstein Cattle — Latvia Farm</figcaption>
+          </figure>
+          <figure>
+            <img src="/images/sheep-farm-straw-barn-latvia.jpg" alt="Sheep in straw barn at European farm" width="900" height="600" loading="lazy" />
+            <figcaption>Sheep Farm — Europe</figcaption>
+          </figure>
+          <figure>
+            <img src="/images/halal-beef-cuts-packaged.jpg" alt="Packaged premium meat cuts for distribution" width="900" height="600" loading="lazy" />
+            <figcaption>Premium Meat Supply</figcaption>
+          </figure>
+        </div>
+
+        <div class="grid grid-3" style="margin-top:1rem">
+          <article class="card"><h3>Transparent Communication</h3><p>Clear updates during inquiry, planning and shipment stages.</p></article>
+          <article class="card"><h3>Route Flexibility</h3><p>Truck, ship and air options selected around timeline and destination.</p></article>
+          <article class="card"><h3>Buyer-Focused Coordination</h3><p>Operational planning built around importer and distributor workflows.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 class="section-title" id="faq-title">Frequently asked questions</h2>
+        <div class="faq">
+          <details>
+            <summary>Which products does Karo Livestock export?</summary>
+            <p>Karo Livestock exports live cattle, sheep, goats and premium meat from Latvia (EU).</p>
+          </details>
+          <details>
+            <summary>Which markets do you serve?</summary>
+            <p>Current communications focus on Iraq, Kurdistan and wider Middle East destination markets.</p>
+          </details>
+          <details>
+            <summary>Which transport options are available?</summary>
+            <p>Shipment coordination is available through truck, ship and air, based on route and buyer requirements.</p>
+          </details>
+          <details>
+            <summary>How can I request a quote?</summary>
+            <p>You can contact Karo Livestock via WhatsApp or email using the contact section below.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 class="section-title" id="contact-title">Start your livestock sourcing conversation</h2>
+        <div class="contact-wrap">
+          <div class="contact-card">
+            <ul class="contact-list">
+              <li>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/37127700121" target="_blank" rel="noopener">+371 277 001 21</a>
+              </li>
+              <li>
+                <strong>Email</strong>
+                <a href="mailto:karanubeshop@gmail.com">karanubeshop@gmail.com</a>
+              </li>
+              <li>
+                <strong>Location</strong>
+                <span>Riga, Latvia</span>
+              </li>
+            </ul>
+          </div>
+          <aside class="contact-card contact-side" aria-label="Call to action">
+            <p>Share your target species, destination and expected volume, and we will respond with next-step export planning details.</p>
+            <a class="btn btn-primary" href="https://wa.me/37127700121" target="_blank" rel="noopener">Open WhatsApp</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© <span id="year">2026</span> Karo Livestock. All rights reserved.</span>
+      <span>Premium corporate livestock export presentation.</span>
     </div>
+  </footer>
 
-    <form class="contact-form" onsubmit="submitForm(event)">
-      <div class="form-row">
-        <div class="form-group">
-          <label data-en="Your Name" data-ar="اسمك" data-ku="ناوت">Your Name</label>
-          <input type="text" required placeholder="Ahmed Al-Rashid" />
-        </div>
-        <div class="form-group">
-          <label data-en="Country" data-ar="البلد" data-ku="وڵات">Country</label>
-          <select>
-            <option value="">-- Select --</option>
-            <option>Iraq 🇮🇶</option>
-            <option>Kurdistan Region</option>
-            <option>Saudi Arabia 🇸🇦</option>
-            <option>UAE 🇦🇪</option>
-            <option>Kuwait 🇰🇼</option>
-            <option>Jordan 🇯🇴</option>
-            <option>Qatar 🇶🇦</option>
-            <option>Lebanon 🇱🇧</option>
-            <option>Oman 🇴🇲</option>
-            <option>Other</option>
-          </select>
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label data-en="WhatsApp / Phone" data-ar="واتساب / هاتف" data-ku="واتساپ / تەلەفۆن">WhatsApp / Phone</label>
-          <input type="tel" placeholder="+964 770..." />
-        </div>
-        <div class="form-group">
-          <label>Email</label>
-          <input type="email" placeholder="you@company.com" />
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label data-en="Animal Type" data-ar="نوع الحيوان" data-ku="جۆری حەیوان">Animal Type</label>
-          <select>
-            <option data-en="Live Cattle" data-ar="أبقار حية" data-ku="گاوی زیندوو">Live Cattle</option>
-            <option data-en="Live Sheep / Lambs" data-ar="أغنام حية / حملان" data-ku="مەڕی زیندوو / برە">Live Sheep / Lambs</option>
-            <option data-en="Cattle + Sheep (mixed)" data-ar="أبقار وأغنام (مختلط)" data-ku="گاو + مەڕ (تێکەڵ)">Cattle + Sheep (mixed)</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label data-en="Transport" data-ar="وسيلة النقل" data-ku="ئامێری گواستنەوە">Transport</label>
-          <select>
-            <option data-en="Truck (TIR)" data-ar="شاحنة TIR" data-ku="تریلەر TIR">Truck (TIR)</option>
-            <option data-en="Livestock Vessel (Sea)" data-ar="سفينة نقل المواشي" data-ku="کەشتیی مەڕوماڵات">Livestock Vessel (Sea)</option>
-            <option data-en="Air Freight" data-ar="شحن جوي" data-ku="بار هەوایی">Air Freight</option>
-            <option data-en="Not decided yet" data-ar="لم أحدد بعد" data-ku="هێشتا بڕیار نەدراوە">Not decided yet</option>
-          </select>
-        </div>
-      </div>
-      <div class="form-group">
-        <label data-en="Quantity & Details" data-ar="الكمية والتفاصيل" data-ku="دان و وردەکاری">Quantity & Details</label>
-        <textarea placeholder="e.g. 300 Merino sheep, delivery to Basra port, need monthly supply..."></textarea>
-      </div>
-      <button type="submit" class="form-submit" data-en="📩 Send Inquiry" data-ar="📩 إرسال الاستفسار" data-ku="📩 ناردنی پرسیار">📩 Send Inquiry</button>
-    </form>
-  </div>
-</section>
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const siteNav = document.getElementById('siteNav');
 
-<!-- Footer -->
-<footer>
-  <div class="footer-logo">Karo <span>Livestock</span></div>
-  <p data-en="© 2025 Karo Livestock. Riga, Latvia — European Union. All rights reserved." data-ar="© 2025 كارو للماشية. ريغا، لاتفيا — الاتحاد الأوروبي. جميع الحقوق محفوظة." data-ku="© 2025 کارۆ لایڤستۆک. ریگا، لاتڤیا — یەکێتیی ئەوروپی. هەموو مافەکان پارێزراون.">© 2025 Karo Livestock. Riga, Latvia — European Union. All rights reserved.</p>
-  <div class="footer-links">
-    <a href="#contact" onclick="document.querySelector('.contact-form textarea').focus(); return false;" data-en="Email Us" data-ar="راسلنا" data-ku="ئیمەیلمان بکە">Email Us</a>
-    <a href="https://wa.me/37127700121">WhatsApp</a>
-  </div>
-</footer>
-
-<script>
-function setLang(lang) {
-  document.documentElement.lang = lang;
-  document.documentElement.dir = ['ar','ku'].includes(lang) ? 'rtl' : 'ltr';
-  document.querySelectorAll('[data-' + lang + ']').forEach(el => {
-    const val = el.getAttribute('data-' + lang);
-    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') el.placeholder = val;
-    else el.innerHTML = val;
-  });
-  const btns = document.querySelectorAll('.lang-btn');
-  btns.forEach(b => b.classList.remove('active'));
-  btns[lang === 'en' ? 0 : lang === 'ar' ? 1 : 2].classList.add('active');
-}
-
-function submitForm(e) {
-  e.preventDefault();
-  const form = e.target;
-  const name    = form.querySelector('input[type=text]')?.value || '';
-  const country = form.querySelector('select')?.value || '';
-  const phone   = form.querySelector('input[type=tel]')?.value || '';
-  const animal  = form.querySelectorAll('select')[1]?.value || '';
-  const transport = form.querySelectorAll('select')[2]?.value || '';
-  const message = form.querySelector('textarea')?.value || '';
-
-  const subject = encodeURIComponent('Livestock Inquiry — ' + animal + ' — ' + country);
-  const body = encodeURIComponent(
-    'Name: ' + name + '\n' +
-    'Country: ' + country + '\n' +
-    'Phone/WhatsApp: ' + phone + '\n' +
-    'Animal: ' + animal + '\n' +
-    'Transport: ' + transport + '\n' +
-    '\nMessage:\n' + message
-  );
-
-  // Email gizli — encoded
-  const e1 = 'karanube'; const e2 = 'shop@gma'; const e3 = 'il.com';
-  window.location.href = 'mailto:' + e1 + e2 + e3 + '?subject=' + subject + '&body=' + body;
-
-  const btn = form.querySelector('.form-submit');
-  btn.textContent = '✅ Opening your email app...';
-  btn.style.background = 'var(--field)';
-  setTimeout(() => {
-    btn.textContent = '📩 Send Inquiry';
-    btn.style.background = '';
-  }, 3000);
-}
-
-// Mobile nav
-const toggle = document.querySelector('.aq-mob-toggle');
-if (toggle) {
-  toggle.addEventListener('click', () => {
-    const links = document.querySelector('.nav-links');
-    const isOpen = links.style.display === 'flex';
-    links.style.display = isOpen ? 'none' : 'flex';
-    if (!isOpen) {
-      links.style.flexDirection = 'column';
-      links.style.position = 'absolute';
-      links.style.top = '70px'; links.style.left = '0'; links.style.right = '0';
-      links.style.background = 'var(--cream)';
-      links.style.padding = '20px 40px';
-      links.style.borderBottom = '1px solid rgba(45,74,34,0.12)';
-      links.style.zIndex = '99';
+    if (menuBtn && siteNav) {
+      menuBtn.addEventListener('click', () => {
+        const isOpen = siteNav.classList.toggle('open');
+        menuBtn.setAttribute('aria-expanded', String(isOpen));
+      });
     }
-  });
-}
-</script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Karo Livestock",
-  "url": "https://karolivestock.com",
-  "description": "Premium European cattle and sheep export from all across Europe to Iraq, Kurdistan and Middle East. All breeds, truck, ship or air freight.",
-  "telephone": "+37127700121",
-  "email": "karanubeshop@gmail.com",
-  "address": {"@type": "PostalAddress", "addressCountry": "LV", "addressLocality": "Riga"},
-  "areaServed": ["IQ", "KW", "SA", "AE", "JO", "QA", "LB", "OM"],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Livestock Export",
-    "itemListElement": [
-      {"@type": "OfferCatalog", "name": "Live Cattle Export — All European Breeds"},
-      {"@type": "OfferCatalog", "name": "Live Sheep & Lamb Export — All European Breeds"},
-      {"@type": "OfferCatalog", "name": "Truck Transport (TIR)"},
-      {"@type": "OfferCatalog", "name": "Sea Freight — Container Ships"},
-      {"@type": "OfferCatalog", "name": "Air Freight — Live Animals"}
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Karo Livestock",
+        "url": "https://karolivestock.com/",
+        "description": "Karo Livestock exports live cattle, sheep, goats and premium meat from Latvia (EU) to Iraq, Kurdistan and the Middle East.",
+        "email": "karanubeshop@gmail.com",
+        "telephone": "+37127700121",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Riga",
+          "addressCountry": "LV"
+        },
+        "areaServed": ["Iraq", "Kurdistan", "Middle East"],
+        "sameAs": ["https://wa.me/37127700121"]
+      },
+      {
+        "@type": "WebSite",
+        "name": "Karo Livestock",
+        "url": "https://karolivestock.com/",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Which products does Karo Livestock export?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Karo Livestock exports live cattle, sheep, goats and premium meat from Latvia (EU)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which markets do you serve?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Current communications focus on Iraq, Kurdistan and wider Middle East destination markets."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which transport options are available?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Shipment coordination is available through truck, ship and air, based on route and buyer requirements."
+            }
+          }
+        ]
+      }
     ]
   }
-}
-</script>
-
+  </script>
 </body>
 </html>
