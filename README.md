@@ -18,7 +18,7 @@ Karo Livestock exports live cattle, sheep, goats and premium meat from Latvia (E
 ## Contact
 
 - 📱 WhatsApp: +371 277 001 21
-- 📧 Email: karanubeshop@gmail.com
+- 📧 Email: karolivestock@inbox.lv
 - 📍 Riga, Latvia 🇱🇻
 
 ## Tech Stack
